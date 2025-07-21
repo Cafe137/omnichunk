@@ -1,6 +1,7 @@
 import { Bee } from '@ethersphere/bee-js'
 import { Binary, Types } from 'cafe-utility'
 import { readFileSync } from 'fs'
+import { depth } from './config'
 
 type JsonItem = {
     neighborhood: string
@@ -15,7 +16,7 @@ async function main() {
     const bee = new Bee('http://localhost:1633')
     let i = 0
     for (const item of json) {
-        console.log(++i, '/', 1024)
+        console.log(++i, '/', 2 ** depth)
         const result = await bee.uploadData(
             Types.asString(process.env.POSTAGE_BATCH),
             Binary.hexToUint8Array(item.bytes)

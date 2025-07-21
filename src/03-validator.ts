@@ -1,5 +1,6 @@
 import { Bee } from '@ethersphere/bee-js'
 import { readFileSync } from 'fs'
+import { depth } from './config'
 
 type JsonItem = {
     neighborhood: string
@@ -14,7 +15,7 @@ async function main() {
     const bee = new Bee('https://bzz.limo')
     let i = 0
     for (const item of json) {
-        console.log(++i, '/', 1024)
+        console.log(++i, '/', 2 ** depth)
         const result = await bee.downloadData(item.reference)
         if (!result.equals(item.bytes)) {
             console.error(
