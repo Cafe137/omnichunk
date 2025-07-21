@@ -1,0 +1,146 @@
+Welcome to Swarm.... Bzzz Bzzzz Bzzzz
+
+
+"Share the knowledge" - in memory of ldeffenb
+
+
+                \     /
+            \    o ^ o    /
+              \ (     ) /
+   ____________(%%%%%%%)____________
+  (     /   /  )%%%%%%%(  \   \     )
+  (___/___/__/           \__\___\___)
+     (     /  /(%%%%%%%)\  \     )
+      (__/___/ (%%%%%%%) \___\__)
+              /(       )\
+            /   (%%%%%)   \
+                 (%%%)
+                   !
+
+DISCLAIMER:
+This software is provided to you "as is", use at your own risk and without warranties of any kind.
+It is your responsibility to read and understand how Swarm works and the implications of running this software.
+The usage of Bee involves various risks, including, but not limited to:
+damage to hardware or loss of funds associated with the Ethereum account connected to your node.
+No developers or entity involved will be liable for any claims and damages associated with your use,
+inability to use, or your interaction with other nodes or the software.
+
+version: 2.6.0-rc7-027599b3 - planned to be supported until 16 September 2025, please follow https://ethswarm.org/
+
+"time"="2025-07-21 22:03:45.153757" "level"="info" "logger"="node" "msg"="bee version" "version"="2.6.0-rc7-027599b3"
+"time"="2025-07-21 22:03:45.220905" "level"="info" "logger"="node" "msg"="swarm public key" "public_key"="03b56d334e5d2df0df1ae03dac163c2b1fe00b4e7d3948261947a7a98ee0199708"
+"time"="2025-07-21 22:03:45.331239" "level"="info" "logger"="node" "msg"="pss public key" "public_key"="02f161315f956da4ed7d8bdbe17b1c5a216a0d2aa93104770f0d0eafd33332cbc8"
+"time"="2025-07-21 22:03:45.331260" "level"="info" "logger"="node" "msg"="using ethereum address" "address"="0x7a093dE3383d22D9CB2AA1e26328478E81a37072"
+"time"="2025-07-21 22:03:45.360655" "level"="info" "logger"="node" "msg"="using overlay address" "address"="f39e01b80ee1fc0bc417fd1a3056e2fbf39d2182251d460fbd970264b87a40f7"
+"time"="2025-07-21 22:03:45.360680" "level"="info" "logger"="node" "msg"="starting with an enabled chain backend"
+"time"="2025-07-21 22:03:45.510353" "level"="info" "logger"="node" "msg"="connected to blockchain backend" "version"="Nethermind/v1.31.11+2be1890e/linux-x64/dotnet9.0.5"
+"time"="2025-07-21 22:03:45.549312" "level"="info" "logger"="node" "msg"="using chain with network network" "chain_id"=100 "network_id"=1
+"time"="2025-07-21 22:03:45.587564" "level"="info" "logger"="node" "msg"="starting debug & api server" "address"="127.0.0.1:1633"
+"time"="2025-07-21 22:03:45.667914" "level"="info" "logger"="node" "msg"="using default factory address" "chain_id"=100 "factory_address"="0xC2d5A532cf69AA9A1378737D8ccDEF884B6E7420"
+"time"="2025-07-21 22:03:45.708625" "level"="info" "logger"="node/chequebook" "msg"="using existing chequebook" "chequebook_address"="0x36cB25a10472127cB2eB14606A0B0503B6d64AE7"
+"time"="2025-07-21 22:03:45.870413" "level"="info" "logger"="node" "msg"="using datadir" "path"="***"
+"time"="2025-07-21 22:03:45.939876" "level"="info" "logger"="node" "msg"="waiting to sync postage contract data, this may take a while... more info available in Debug loglevel"
+"time"="2025-07-21 22:03:45.979760" "level"="info" "logger"="node" "msg"="started postage contract data sync in the background..."
+"time"="2025-07-21 22:03:45.980254" "level"="info" "logger"="node" "msg"="starting in light mode"
+"time"="2025-07-21 22:03:46.032994" "level"="info" "logger"="node/multiresolver" "msg"="name resolver: no name resolution service provided"
+"time"="2025-07-21 22:03:46.033601" "level"="warning" "logger"="node/kademlia" "msg"="connect to bootnode failed" "bootnode_address"="/ip4/127.0.0.1/tcp/1634/p2p/Qmeo2WQjYpCLp1MWXd2DS1v5dAaJChvpWke5oUFp6jCvop"
+"time"="2025-07-21 22:03:46.033614" "level"="warning" "logger"="node/kademlia" "msg"="discover to bootnode failed" "bootnode_address"="/ip4/127.0.0.1/tcp/1634/p2p/Qmeo2WQjYpCLp1MWXd2DS1v5dAaJChvpWke5oUFp6jCvop"
+"time"="2025-07-21 22:03:46.341669" "level"="info" "logger"="node" "msg"="node warmup check initiated. monitoring activity rate to determine readiness." "startTime"="2025-07-21 22:03:46.341668 +0200 CEST m=+1.213733126"
+"time"="2025-07-21 22:03:46.342100" "level"="info" "logger"="node" "msg"="node warmup complete. system is considered stable and ready." "stabilizationTime"="2025-07-21 22:03:46.341668 +0200 CEST m=+1.213733126" "totalMonitoredEvents"=3
+"time"="2025-07-21 22:03:46.342144" "level"="info" "logger"="node" "msg"="node warmup stabilization complete, updating API status"
+"time"="2025-07-21 22:03:46.342464" "level"="info" "logger"="node/pusher" "msg"="got a chunk being smuggled"
+"time"="2025-07-21 22:04:25.909482" "level"="info" "logger"="node/transaction" "msg"="pending transaction confirmed" "sender_address"="0x7a093dE3383d22D9CB2AA1e26328478E81a37072" "tx"="0xc6d974bb15ea933cd76cd0603fbab0ca4f3e29aa93bde40305254a00759fe148"
+"time"="2025-07-21 22:04:31.497413" "level"="info" "logger"="node/transaction" "msg"="pending transaction confirmed" "sender_address"="0x7a093dE3383d22D9CB2AA1e26328478E81a37072" "tx"="0x9662ffab628dc30c06865586d54e302ecba4097ae01a378c06acc5ade6392497"
+"time"="2025-07-21 22:04:31.509699" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:34.514728" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:37.519856" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:40.526447" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:43.532158" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:46.537361" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:49.545849" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:52.556300" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:55.566846" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:04:58.577412" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:01.584805" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:04.591449" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:07.599189" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:10.606485" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:13.614504" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:16.620225" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:19.624921" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:22.629203" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:25.634621" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:28.641480" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:31.646975" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:34.650857" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:37.656208" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:40.661620" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:43.666603" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:46.671824" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:49.676811" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:52.681560" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:05:55.685365" "level"="error" "logger"="node/api/get_stamp" "msg"="get stamp issuer: get issuer failed"
+"time"="2025-07-21 22:07:02.808246" "level"="error" "logger"="node/storer" "msg"="subscribe push: iterate error" "error"="iterate callback function errored: chunk store: failed reading retrievalIndex for address 0056dba0ec8ece39dee6427192b25d1c55440fd4e1a98ec43b6b960b7ccf18b6: storage: not found"
+"time"="2025-07-21 22:07:04.321220" "level"="error" "logger"="node/storer" "msg"="subscribe push: iterate error" "error"="iterate callback function errored: chunk store: failed reading retrievalIndex for address 14c1b250cf1cfcd4f44ddc8f9751d69a4aff418c364b70c77cae0624c831498e: storage: not found"
+"time"="2025-07-21 22:07:06.116783" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="new stream for peerid: incompatible stream: failed to negotiate protocol: protocols not supported: [/swarm/swap/1.0.0/swap]"
+"time"="2025-07-21 22:07:06.237937" "level"="error" "logger"="node/accounting" "msg"="notifyrefreshmentsent failed to refresh" "error"="settlement allowance timestamps from peer differed from our measurement by more than 2 seconds"
+"time"="2025-07-21 22:07:06.306002" "level"="error" "logger"="node/storer" "msg"="subscribe push: iterate error" "error"="iterate callback function errored: chunk store: failed reading retrievalIndex for address 3c0d61467d15ce01465d83b6eef2f2faa4ebf38edc3525cee23ec70cd5152e2d: storage: not found"
+"time"="2025-07-21 22:07:07.684916" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="new stream for peerid: incompatible stream: failed to negotiate protocol: protocols not supported: [/swarm/swap/1.0.0/swap]"
+"time"="2025-07-21 22:07:07.915167" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="new stream for peerid: incompatible stream: failed to negotiate protocol: protocols not supported: [/swarm/swap/1.0.0/swap]"
+"time"="2025-07-21 22:07:08.763324" "level"="error" "logger"="node/storer" "msg"="subscribe push: iterate error" "error"="iterate callback function errored: chunk store: failed reading retrievalIndex for address 76f8b585cff5bd876bb2bbde5f0f397456a4bd9139be5771958f37af674cfca1: storage: not found"
+"time"="2025-07-21 22:07:10.343746" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="new stream for peerid: incompatible stream: failed to negotiate protocol: protocols not supported: [/swarm/swap/1.0.0/swap]"
+"time"="2025-07-21 22:07:10.506074" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="new stream for peerid: incompatible stream: failed to negotiate protocol: protocols not supported: [/swarm/swap/1.0.0/swap]"
+"time"="2025-07-21 22:07:10.738640" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:10.738675" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:10.763133" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:10.791847" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:10.853722" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:10.898839" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:10.898869" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:10.960933" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:11.047129" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.434487" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.434520" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.434547" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525199" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525211" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525250" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525318" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525710" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525337" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525341" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525350" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525396" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525327" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525863" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525877" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525887" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525899" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.525910" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.526278" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.611085" "level"="error" "logger"="node/storer" "msg"="subscribe push: iterate error" "error"="iterate callback function errored: chunk store: failed reading retrievalIndex for address e51f6726a6ab6769f76b051c05ccc4bf82b0617aba16e32981118ad427dffd2b: storage: not found"
+"time"="2025-07-21 22:07:12.710584" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.798513" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.798610" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.971404" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.971543" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.983506" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.983580" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:12.983597" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:13.076329" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:13.173546" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:14.899857" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:14.899898" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:14.922614" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:14.922774" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:14.925327" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:14.925723" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:15.019303" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+"time"="2025-07-21 22:07:15.199347" "level"="warning" "logger"="node/accounting" "msg"="payment failure" "error"="Post \"https://xdai.fairdatasociety.org\": context deadline exceeded"
+^C"time"="2025-07-21 22:13:00.397052" "level"="info" "logger"="node" "msg"="received interrupt signal"
+"time"="2025-07-21 22:13:00.397151" "level"="info" "logger"="node" "msg"="shutting down..."
+"time"="2025-07-21 22:13:00.397396" "level"="info" "logger"="node/pusher" "msg"="pusher shutting down"
+"time"="2025-07-21 22:13:00.397419" "level"="info" "logger"="node/pullsync" "msg"="pull syncer shutting down"
+"time"="2025-07-21 22:13:00.414014" "level"="info" "logger"="node/kademlia" "msg"="kademlia shutting down"
+"time"="2025-07-21 22:13:00.414138" "level"="info" "logger"="node/kademlia" "msg"="kademlia persisting peer metrics"
+"time"="2025-07-21 22:13:00.617705" "level"="info" "logger"="node" "msg"="node shutdown"
