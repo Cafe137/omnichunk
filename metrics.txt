@@ -1,18 +1,18 @@
 # HELP bee_accounting_accounting_blocks_count Number of occurrences of temporarily skipping a peer to avoid crossing their disconnect thresholds
 # TYPE bee_accounting_accounting_blocks_count counter
-bee_accounting_accounting_blocks_count 185541
+bee_accounting_accounting_blocks_count 8.638132e+06
 # HELP bee_accounting_accounting_reserve_count Number of reserve calls
 # TYPE bee_accounting_accounting_reserve_count counter
-bee_accounting_accounting_reserve_count 187744
+bee_accounting_accounting_reserve_count 8.708016e+06
 # HELP bee_accounting_credit_events_count Number of occurrences of BZZ credit events towards peers
 # TYPE bee_accounting_credit_events_count counter
-bee_accounting_credit_events_count 2193
+bee_accounting_credit_events_count 69830
 # HELP bee_accounting_debit_events_count Number of occurrences of BZZ debit events towards peers
 # TYPE bee_accounting_debit_events_count counter
 bee_accounting_debit_events_count 0
 # HELP bee_accounting_disconnects_enforce_refresh_count Number of occurrences of peers disconnected based on failed refreshment attempts
 # TYPE bee_accounting_disconnects_enforce_refresh_count counter
-bee_accounting_disconnects_enforce_refresh_count 1
+bee_accounting_disconnects_enforce_refresh_count 0
 # HELP bee_accounting_disconnects_ghost_overdraw_count Number of occurrences of peers disconnected based on undebitable requests thresholds
 # TYPE bee_accounting_disconnects_ghost_overdraw_count counter
 bee_accounting_disconnects_ghost_overdraw_count 0
@@ -21,19 +21,19 @@ bee_accounting_disconnects_ghost_overdraw_count 0
 bee_accounting_disconnects_overdraw_count 0
 # HELP bee_accounting_disconnects_reconnect_count Number of occurrences of peers disconnected based on early attempt to reconnect
 # TYPE bee_accounting_disconnects_reconnect_count counter
-bee_accounting_disconnects_reconnect_count 4
+bee_accounting_disconnects_reconnect_count 3
 # HELP bee_accounting_non_fatal_refresh_fail_count Number of occurrences of refreshments failing for peers because of peer timestamp ahead of ours
 # TYPE bee_accounting_non_fatal_refresh_fail_count counter
 bee_accounting_non_fatal_refresh_fail_count 0
 # HELP bee_accounting_originated_credit_events_count Number of occurrences of BZZ credit events as originator towards peers
 # TYPE bee_accounting_originated_credit_events_count counter
-bee_accounting_originated_credit_events_count 2193
+bee_accounting_originated_credit_events_count 69830
 # HELP bee_accounting_payment_attempt_count Number of attempts of payment op
 # TYPE bee_accounting_payment_attempt_count counter
 bee_accounting_payment_attempt_count 0
 # HELP bee_accounting_payment_error_count Number of errors occurring during payment op
 # TYPE bee_accounting_payment_error_count counter
-bee_accounting_payment_error_count 51
+bee_accounting_payment_error_count 1073
 # HELP bee_accounting_refresh_attempt_count Number of attempts of refresh op
 # TYPE bee_accounting_refresh_attempt_count counter
 bee_accounting_refresh_attempt_count 0
@@ -54,25 +54,25 @@ bee_accounting_time_out_of_sync_alleged 0
 bee_accounting_time_out_of_sync_interval 0
 # HELP bee_accounting_time_out_of_sync_recent Number of times the timestamps from peer differed from our measurement by more than 2 seconds
 # TYPE bee_accounting_time_out_of_sync_recent counter
-bee_accounting_time_out_of_sync_recent 1
+bee_accounting_time_out_of_sync_recent 0
 # HELP bee_accounting_total_credited_amount Amount of BZZ credited to peers (potential cost of the node)
 # TYPE bee_accounting_total_credited_amount counter
-bee_accounting_total_credited_amount 6.6947e+08
+bee_accounting_total_credited_amount 2.154314e+10
 # HELP bee_accounting_total_debited_amount Amount of BZZ debited to peers (potential income of the node)
 # TYPE bee_accounting_total_debited_amount counter
 bee_accounting_total_debited_amount 0
 # HELP bee_accounting_total_originated_credited_amount Amount of BZZ credited to peers (potential cost of the node) for originated traffic
 # TYPE bee_accounting_total_originated_credited_amount counter
-bee_accounting_total_originated_credited_amount 6.6947e+08
+bee_accounting_total_originated_credited_amount 2.154314e+10
 # HELP bee_batchstore_commitment Sum of all batches' commitment.
 # TYPE bee_batchstore_commitment gauge
-bee_batchstore_commitment 1.7661820928e+10
+bee_batchstore_commitment 1.7661952e+10
 # HELP bee_batchstore_radius Radius of responsibility observed by the batchstore.
 # TYPE bee_batchstore_radius gauge
 bee_batchstore_radius 13
 # HELP bee_eth_backend_calls_balance Count of eth_getBalance rpc calls
 # TYPE bee_eth_backend_calls_balance counter
-bee_eth_backend_calls_balance 2
+bee_eth_backend_calls_balance 3
 # HELP bee_eth_backend_calls_block_by_number Count of eth_getBlockByNumber rpc calls
 # TYPE bee_eth_backend_calls_block_by_number counter
 bee_eth_backend_calls_block_by_number 0
@@ -81,7 +81,7 @@ bee_eth_backend_calls_block_by_number 0
 bee_eth_backend_calls_block_header 3
 # HELP bee_eth_backend_calls_block_number Count of eth_blockNumber rpc calls
 # TYPE bee_eth_backend_calls_block_number counter
-bee_eth_backend_calls_block_number 29
+bee_eth_backend_calls_block_number 39
 # HELP bee_eth_backend_calls_chain_id Count of eth_chainId rpc calls
 # TYPE bee_eth_backend_calls_chain_id counter
 bee_eth_backend_calls_chain_id 1
@@ -93,10 +93,10 @@ bee_eth_backend_calls_code_at 0
 bee_eth_backend_calls_estimate_gasprice 2
 # HELP bee_eth_backend_calls_eth_call Count of eth_call rpc calls
 # TYPE bee_eth_backend_calls_eth_call counter
-bee_eth_backend_calls_eth_call 315
+bee_eth_backend_calls_eth_call 7688
 # HELP bee_eth_backend_calls_filter_logs Count of eth_getLogs rpc calls
 # TYPE bee_eth_backend_calls_filter_logs counter
-bee_eth_backend_calls_filter_logs 14
+bee_eth_backend_calls_filter_logs 22
 # HELP bee_eth_backend_calls_nonce_at Count of eth_getTransactionCount (pending false) rpc calls
 # TYPE bee_eth_backend_calls_nonce_at counter
 bee_eth_backend_calls_nonce_at 4
@@ -117,10 +117,10 @@ bee_eth_backend_calls_transaction 0
 bee_eth_backend_calls_transaction_receipt 6
 # HELP bee_eth_backend_total_rpc_calls Count of rpc calls
 # TYPE bee_eth_backend_total_rpc_calls counter
-bee_eth_backend_total_rpc_calls 382
+bee_eth_backend_total_rpc_calls 7774
 # HELP bee_eth_backend_total_rpc_errors Count of rpc errors
 # TYPE bee_eth_backend_total_rpc_errors counter
-bee_eth_backend_total_rpc_errors 46
+bee_eth_backend_total_rpc_errors 872
 # HELP bee_handshake_ack_rx The number of ack messages that were successfully read.
 # TYPE bee_handshake_ack_rx counter
 bee_handshake_ack_rx 0
@@ -141,41 +141,41 @@ bee_handshake_syn_rx 0
 bee_handshake_syn_rx_failed 0
 # HELP bee_hive_broadcast_peers_count Number of calls to broadcast peers.
 # TYPE bee_hive_broadcast_peers_count counter
-bee_hive_broadcast_peers_count 2484
+bee_hive_broadcast_peers_count 2590
 # HELP bee_hive_broadcast_peers_message_count Number of individual peer gossip messages sent.
 # TYPE bee_hive_broadcast_peers_message_count counter
-bee_hive_broadcast_peers_message_count 2484
+bee_hive_broadcast_peers_message_count 2590
 # HELP bee_hive_broadcast_peers_peer_count Number of peers to be sent.
 # TYPE bee_hive_broadcast_peers_peer_count counter
-bee_hive_broadcast_peers_peer_count 4696
+bee_hive_broadcast_peers_peer_count 4908
 # HELP bee_hive_fail_ping_time The time spent for unsuccessful pings.
 # TYPE bee_hive_fail_ping_time histogram
-bee_hive_fail_ping_time_bucket{le="0.005"} 8
-bee_hive_fail_ping_time_bucket{le="0.01"} 8
-bee_hive_fail_ping_time_bucket{le="0.025"} 8
-bee_hive_fail_ping_time_bucket{le="0.05"} 8
-bee_hive_fail_ping_time_bucket{le="0.1"} 10
-bee_hive_fail_ping_time_bucket{le="0.25"} 10
-bee_hive_fail_ping_time_bucket{le="0.5"} 11
-bee_hive_fail_ping_time_bucket{le="1"} 11
-bee_hive_fail_ping_time_bucket{le="2.5"} 26
-bee_hive_fail_ping_time_bucket{le="5"} 59
-bee_hive_fail_ping_time_bucket{le="10"} 86
-bee_hive_fail_ping_time_bucket{le="+Inf"} 86
-bee_hive_fail_ping_time_sum 285.63105625300005
-bee_hive_fail_ping_time_count 86
+bee_hive_fail_ping_time_bucket{le="0.005"} 3
+bee_hive_fail_ping_time_bucket{le="0.01"} 3
+bee_hive_fail_ping_time_bucket{le="0.025"} 4
+bee_hive_fail_ping_time_bucket{le="0.05"} 4
+bee_hive_fail_ping_time_bucket{le="0.1"} 9
+bee_hive_fail_ping_time_bucket{le="0.25"} 11
+bee_hive_fail_ping_time_bucket{le="0.5"} 15
+bee_hive_fail_ping_time_bucket{le="1"} 15
+bee_hive_fail_ping_time_bucket{le="2.5"} 22
+bee_hive_fail_ping_time_bucket{le="5"} 47
+bee_hive_fail_ping_time_bucket{le="10"} 102
+bee_hive_fail_ping_time_bucket{le="+Inf"} 102
+bee_hive_fail_ping_time_sum 386.747576952
+bee_hive_fail_ping_time_count 102
 # HELP bee_hive_peer_attempt_count Number of attempts made to check peer reachability.
 # TYPE bee_hive_peer_attempt_count counter
-bee_hive_peer_attempt_count 112
+bee_hive_peer_attempt_count 130
 # HELP bee_hive_peer_underlay_err_count Number of errors extracting peer underlay.
 # TYPE bee_hive_peer_underlay_err_count counter
 bee_hive_peer_underlay_err_count 0
 # HELP bee_hive_peers_handler_count Number of peer messages received.
 # TYPE bee_hive_peers_handler_count counter
-bee_hive_peers_handler_count 492
+bee_hive_peers_handler_count 716
 # HELP bee_hive_peers_handler_peers_count Number of peers received in peer messages.
 # TYPE bee_hive_peers_handler_peers_count counter
-bee_hive_peers_handler_peers_count 4101
+bee_hive_peers_handler_peers_count 4255
 # HELP bee_hive_ping_time The time spent for pings.
 # TYPE bee_hive_ping_time histogram
 bee_hive_ping_time_bucket{le="0.005"} 0
@@ -183,24 +183,24 @@ bee_hive_ping_time_bucket{le="0.01"} 0
 bee_hive_ping_time_bucket{le="0.025"} 0
 bee_hive_ping_time_bucket{le="0.05"} 0
 bee_hive_ping_time_bucket{le="0.1"} 0
-bee_hive_ping_time_bucket{le="0.25"} 10
-bee_hive_ping_time_bucket{le="0.5"} 16
-bee_hive_ping_time_bucket{le="1"} 16
-bee_hive_ping_time_bucket{le="2.5"} 26
-bee_hive_ping_time_bucket{le="5"} 26
-bee_hive_ping_time_bucket{le="10"} 26
-bee_hive_ping_time_bucket{le="+Inf"} 26
-bee_hive_ping_time_sum 17.325006333
-bee_hive_ping_time_count 26
+bee_hive_ping_time_bucket{le="0.25"} 6
+bee_hive_ping_time_bucket{le="0.5"} 17
+bee_hive_ping_time_bucket{le="1"} 19
+bee_hive_ping_time_bucket{le="2.5"} 27
+bee_hive_ping_time_bucket{le="5"} 27
+bee_hive_ping_time_bucket{le="10"} 27
+bee_hive_ping_time_bucket{le="+Inf"} 27
+bee_hive_ping_time_sum 16.754469042
+bee_hive_ping_time_count 27
 # HELP bee_hive_reachable_peers_count Number of peers that are reachable.
 # TYPE bee_hive_reachable_peers_count counter
-bee_hive_reachable_peers_count 26
+bee_hive_reachable_peers_count 27
 # HELP bee_hive_store_peer_err_count Number of peers that could not be stored.
 # TYPE bee_hive_store_peer_err_count counter
 bee_hive_store_peer_err_count 0
 # HELP bee_hive_unreachable_peers_count Number of peers that are unreachable.
 # TYPE bee_hive_unreachable_peers_count counter
-bee_hive_unreachable_peers_count 86
+bee_hive_unreachable_peers_count 102
 # HELP bee_info Bee information.
 # TYPE bee_info gauge
 bee_info{version="2.6.0-rc7-027599b3"} 0
@@ -215,16 +215,16 @@ bee_kademlia_current_depth 10
 bee_kademlia_current_storage_depth 10
 # HELP bee_kademlia_currently_connected_peers Number of currently connected peers.
 # TYPE bee_kademlia_currently_connected_peers gauge
-bee_kademlia_currently_connected_peers 149
+bee_kademlia_currently_connected_peers 148
 # HELP bee_kademlia_currently_known_peers Number of currently known peers.
 # TYPE bee_kademlia_currently_known_peers gauge
-bee_kademlia_currently_known_peers 7620
+bee_kademlia_currently_known_peers 7638
 # HELP bee_kademlia_internal_metrics_flush_time The time spent flushing the internal metrics about peers to the state-store.
 # TYPE bee_kademlia_internal_metrics_flush_time histogram
 bee_kademlia_internal_metrics_flush_time_bucket{le="0.005"} 0
 bee_kademlia_internal_metrics_flush_time_bucket{le="0.01"} 0
 bee_kademlia_internal_metrics_flush_time_bucket{le="0.025"} 0
-bee_kademlia_internal_metrics_flush_time_bucket{le="0.05"} 0
+bee_kademlia_internal_metrics_flush_time_bucket{le="0.05"} 1
 bee_kademlia_internal_metrics_flush_time_bucket{le="0.1"} 1
 bee_kademlia_internal_metrics_flush_time_bucket{le="0.25"} 1
 bee_kademlia_internal_metrics_flush_time_bucket{le="0.5"} 1
@@ -233,7 +233,7 @@ bee_kademlia_internal_metrics_flush_time_bucket{le="2.5"} 1
 bee_kademlia_internal_metrics_flush_time_bucket{le="5"} 1
 bee_kademlia_internal_metrics_flush_time_bucket{le="10"} 1
 bee_kademlia_internal_metrics_flush_time_bucket{le="+Inf"} 1
-bee_kademlia_internal_metrics_flush_time_sum 0.062818708
+bee_kademlia_internal_metrics_flush_time_sum 0.033670625
 bee_kademlia_internal_metrics_flush_time_count 1
 # HELP bee_kademlia_internal_metrics_flush_total_errors Number of total errors occurred during flushing the internal metrics to the state-store.
 # TYPE bee_kademlia_internal_metrics_flush_total_errors counter
@@ -256,7 +256,7 @@ bee_kademlia_peer_latency_ewma_sum 0
 bee_kademlia_peer_latency_ewma_count 0
 # HELP bee_kademlia_peers_reachability_status The reachability status of peers.
 # TYPE bee_kademlia_peers_reachability_status gauge
-bee_kademlia_peers_reachability_status{peers_reachability_status="Public"} 149
+bee_kademlia_peers_reachability_status{peers_reachability_status="Public"} 148
 bee_kademlia_peers_reachability_status{peers_reachability_status="Unknown"} 1
 # HELP bee_kademlia_pick_calls The number of pick method call made.
 # TYPE bee_kademlia_pick_calls counter
@@ -282,11 +282,11 @@ bee_kademlia_start_add_addressbook_overlays_time_bucket{le="2.5"} 1
 bee_kademlia_start_add_addressbook_overlays_time_bucket{le="5"} 1
 bee_kademlia_start_add_addressbook_overlays_time_bucket{le="10"} 1
 bee_kademlia_start_add_addressbook_overlays_time_bucket{le="+Inf"} 1
-bee_kademlia_start_add_addressbook_overlays_time_sum 0.02954725
+bee_kademlia_start_add_addressbook_overlays_time_sum 0.034366459
 bee_kademlia_start_add_addressbook_overlays_time_count 1
 # HELP bee_kademlia_total_before_expire_waits Total before expire waits made.
 # TYPE bee_kademlia_total_before_expire_waits counter
-bee_kademlia_total_before_expire_waits 1356
+bee_kademlia_total_before_expire_waits 1127
 # HELP bee_kademlia_total_bootnodes_connection_attempts Total boot-nodes connection attempts made.
 # TYPE bee_kademlia_total_bootnodes_connection_attempts counter
 bee_kademlia_total_bootnodes_connection_attempts 1
@@ -295,59 +295,59 @@ bee_kademlia_total_bootnodes_connection_attempts 1
 bee_kademlia_total_inbound_connections 0
 # HELP bee_kademlia_total_inbound_disconnections Total inbound disconnections made.
 # TYPE bee_kademlia_total_inbound_disconnections counter
-bee_kademlia_total_inbound_disconnections 4
+bee_kademlia_total_inbound_disconnections 3
 # HELP bee_kademlia_total_outbound_connection_attempts Total outbound connection attempts made.
 # TYPE bee_kademlia_total_outbound_connection_attempts counter
-bee_kademlia_total_outbound_connection_attempts 180
+bee_kademlia_total_outbound_connection_attempts 173
 # HELP bee_kademlia_total_outbound_connection_failed_attempts Total outbound connection failed attempts made.
 # TYPE bee_kademlia_total_outbound_connection_failed_attempts counter
-bee_kademlia_total_outbound_connection_failed_attempts 14
+bee_kademlia_total_outbound_connection_failed_attempts 15
 # HELP bee_kademlia_total_outbound_connections Total outbound connections made.
 # TYPE bee_kademlia_total_outbound_connections counter
-bee_kademlia_total_outbound_connections 153
+bee_kademlia_total_outbound_connections 151
 # HELP bee_libp2p_blocklisted_peer_count Number of peers we've blocklisted.
 # TYPE bee_libp2p_blocklisted_peer_count counter
-bee_libp2p_blocklisted_peer_count 1
+bee_libp2p_blocklisted_peer_count 0
 # HELP bee_libp2p_blocklisted_peer_err_count Number of peers we've been unable to blocklist.
 # TYPE bee_libp2p_blocklisted_peer_err_count counter
 bee_libp2p_blocklisted_peer_err_count 0
 # HELP bee_libp2p_closed_stream_count Number of closed outgoing libp2p streams.
 # TYPE bee_libp2p_closed_stream_count counter
-bee_libp2p_closed_stream_count 4850
+bee_libp2p_closed_stream_count 106207
 # HELP bee_libp2p_connect_breaker_count Number of times we got a closed breaker while connecting to another peer.
 # TYPE bee_libp2p_connect_breaker_count counter
 bee_libp2p_connect_breaker_count 0
 # HELP bee_libp2p_created_connection_count Number of initiated outgoing libp2p connections.
 # TYPE bee_libp2p_created_connection_count counter
-bee_libp2p_created_connection_count 153
+bee_libp2p_created_connection_count 151
 # HELP bee_libp2p_created_stream_count Number of initiated outgoing libp2p streams.
 # TYPE bee_libp2p_created_stream_count counter
-bee_libp2p_created_stream_count 6725
+bee_libp2p_created_stream_count 108428
 # HELP bee_libp2p_disconnect_count Number of peers we've disconnected from (initiated locally).
 # TYPE bee_libp2p_disconnect_count counter
-bee_libp2p_disconnect_count 1
+bee_libp2p_disconnect_count 0
 # HELP bee_libp2p_handled_connection_count Number of handled incoming libp2p connections.
 # TYPE bee_libp2p_handled_connection_count counter
-bee_libp2p_handled_connection_count 153
+bee_libp2p_handled_connection_count 152
 # HELP bee_libp2p_handled_stream_count Number of handled incoming libp2p streams.
 # TYPE bee_libp2p_handled_stream_count counter
-bee_libp2p_handled_stream_count 665
+bee_libp2p_handled_stream_count 1298
 # HELP bee_libp2p_headers_exchange_duration The duration spent exchanging the headers.
 # TYPE bee_libp2p_headers_exchange_duration histogram
-bee_libp2p_headers_exchange_duration_bucket{le="0.005"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="0.01"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="0.025"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="0.05"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="0.1"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="0.25"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="0.5"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="1"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="2.5"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="5"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="10"} 665
-bee_libp2p_headers_exchange_duration_bucket{le="+Inf"} 665
-bee_libp2p_headers_exchange_duration_sum 0.03369723600000001
-bee_libp2p_headers_exchange_duration_count 665
+bee_libp2p_headers_exchange_duration_bucket{le="0.005"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="0.01"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="0.025"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="0.05"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="0.1"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="0.25"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="0.5"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="1"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="2.5"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="5"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="10"} 1298
+bee_libp2p_headers_exchange_duration_bucket{le="+Inf"} 1298
+bee_libp2p_headers_exchange_duration_sum 0.03394510299999993
+bee_libp2p_headers_exchange_duration_count 1298
 # HELP bee_libp2p_kickedout_peers_count Number of total kicked-out peers.
 # TYPE bee_libp2p_kickedout_peers_count counter
 bee_libp2p_kickedout_peers_count 0
@@ -356,7 +356,7 @@ bee_libp2p_kickedout_peers_count 0
 bee_libp2p_stream_handler_error_reset_count 0
 # HELP bee_libp2p_stream_reset_count Number of outgoing libp2p streams resets.
 # TYPE bee_libp2p_stream_reset_count counter
-bee_libp2p_stream_reset_count 56
+bee_libp2p_stream_reset_count 923
 # HELP bee_libp2p_unexpected_protocol_request_count Number of requests the peer is not expecting.
 # TYPE bee_libp2p_unexpected_protocol_request_count counter
 bee_libp2p_unexpected_protocol_request_count 0
@@ -386,34 +386,34 @@ bee_localstore_expiry_run_count 0
 bee_localstore_expiry_trigger_count 0
 # HELP bee_localstore_leveldb_stats LevelDB statistics.
 # TYPE bee_localstore_leveldb_stats histogram
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="alive_iterators"} 0
-bee_localstore_leveldb_stats_count{counter="alive_iterators"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="+Inf"} 22
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.005"} 16
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.01"} 16
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.025"} 16
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.05"} 16
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.1"} 16
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.25"} 16
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="0.5"} 16
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_iterators",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="alive_iterators"} 19
+bee_localstore_leveldb_stats_count{counter="alive_iterators"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="alive_snapshots",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="alive_snapshots"} 0
-bee_localstore_leveldb_stats_count{counter="alive_snapshots"} 22
+bee_localstore_leveldb_stats_count{counter="alive_snapshots"} 35
 bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="0.025"} 0
@@ -425,9 +425,9 @@ bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="block_cache_size"} 1.12981966e+08
-bee_localstore_leveldb_stats_count{counter="block_cache_size"} 22
+bee_localstore_leveldb_stats_bucket{counter="block_cache_size",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="block_cache_size"} 3.7796929e+08
+bee_localstore_leveldb_stats_count{counter="block_cache_size"} 35
 bee_localstore_leveldb_stats_bucket{counter="io_read",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_read",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_read",le="0.025"} 0
@@ -439,9 +439,9 @@ bee_localstore_leveldb_stats_bucket{counter="io_read",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_read",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_read",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_read",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="io_read",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="io_read"} 7.745022e+08
-bee_localstore_leveldb_stats_count{counter="io_read"} 22
+bee_localstore_leveldb_stats_bucket{counter="io_read",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="io_read"} 3.976466846e+09
+bee_localstore_leveldb_stats_count{counter="io_read"} 35
 bee_localstore_leveldb_stats_bucket{counter="io_write",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_write",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_write",le="0.025"} 0
@@ -453,121 +453,121 @@ bee_localstore_leveldb_stats_bucket{counter="io_write",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_write",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_write",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="io_write",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="io_write",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="io_write"} 5.7864707e+07
-bee_localstore_leveldb_stats_count{counter="io_write"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="+Inf"} 22
+bee_localstore_leveldb_stats_bucket{counter="io_write",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="io_write"} 1.651800745e+09
+bee_localstore_leveldb_stats_count{counter="io_write"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_comp",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_0_comp"} 0
-bee_localstore_leveldb_stats_count{counter="level_0_comp"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_0_duration"} 0
-bee_localstore_leveldb_stats_count{counter="level_0_duration"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_0_comp"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.005"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.01"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.025"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.05"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.1"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.25"} 25
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_duration",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_0_duration"} 5.5477711580000015
+bee_localstore_leveldb_stats_count{counter="level_0_duration"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_read",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_0_read"} 0
-bee_localstore_leveldb_stats_count{counter="level_0_read"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.005"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.01"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.025"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.05"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.1"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.25"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.5"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="1"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="2.5"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="5"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_0_size"} 4.31823876e+08
-bee_localstore_leveldb_stats_count{counter="level_0_size"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.005"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.01"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.025"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.05"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.1"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.25"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.5"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="1"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="2.5"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="5"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_0_tables_count"} 154
-bee_localstore_leveldb_stats_count{counter="level_0_tables_count"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_0_write"} 0
-bee_localstore_leveldb_stats_count{counter="level_0_write"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_0_read"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.005"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.01"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.025"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.05"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.1"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.25"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="0.5"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="1"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="2.5"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="5"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="10"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_size",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_0_size"} 3.73417396e+08
+bee_localstore_leveldb_stats_count{counter="level_0_size"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.005"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.01"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.025"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.05"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.1"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.25"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="0.5"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="1"} 25
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_tables_count",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_0_tables_count"} 26
+bee_localstore_leveldb_stats_count{counter="level_0_tables_count"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.005"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.01"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.025"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.05"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.1"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.25"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="0.5"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="1"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="2.5"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="5"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="10"} 19
+bee_localstore_leveldb_stats_bucket{counter="level_0_write",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_0_write"} 3.73417396e+08
+bee_localstore_leveldb_stats_count{counter="level_0_write"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_duration",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_1_duration"} 0
-bee_localstore_leveldb_stats_count{counter="level_1_duration"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_1_duration"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_read",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_1_read"} 0
-bee_localstore_leveldb_stats_count{counter="level_1_read"} 22
+bee_localstore_leveldb_stats_count{counter="level_1_read"} 35
 bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="0.025"} 0
@@ -579,9 +579,9 @@ bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_1_size"} 2.288662134e+09
-bee_localstore_leveldb_stats_count{counter="level_1_size"} 22
+bee_localstore_leveldb_stats_bucket{counter="level_1_size",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_1_size"} 3.46479994e+09
+bee_localstore_leveldb_stats_count{counter="level_1_size"} 35
 bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="0.025"} 0
@@ -593,51 +593,51 @@ bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_1_tables_count"} 1562
-bee_localstore_leveldb_stats_count{counter="level_1_tables_count"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="+Inf"} 22
+bee_localstore_leveldb_stats_bucket{counter="level_1_tables_count",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_1_tables_count"} 2345
+bee_localstore_leveldb_stats_count{counter="level_1_tables_count"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_1_write",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_1_write"} 0
-bee_localstore_leveldb_stats_count{counter="level_1_write"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_1_write"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_duration",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_2_duration"} 0
-bee_localstore_leveldb_stats_count{counter="level_2_duration"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_2_duration"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_read",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_2_read"} 0
-bee_localstore_leveldb_stats_count{counter="level_2_read"} 22
+bee_localstore_leveldb_stats_count{counter="level_2_read"} 35
 bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="0.025"} 0
@@ -649,9 +649,9 @@ bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_2_size"} 2.3033937828e+10
-bee_localstore_leveldb_stats_count{counter="level_2_size"} 22
+bee_localstore_leveldb_stats_bucket{counter="level_2_size",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_2_size"} 3.662521464e+10
+bee_localstore_leveldb_stats_count{counter="level_2_size"} 35
 bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="0.025"} 0
@@ -663,51 +663,51 @@ bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_2_tables_count"} 10494
-bee_localstore_leveldb_stats_count{counter="level_2_tables_count"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="+Inf"} 22
+bee_localstore_leveldb_stats_bucket{counter="level_2_tables_count",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_2_tables_count"} 16660
+bee_localstore_leveldb_stats_count{counter="level_2_tables_count"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_2_write",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_2_write"} 0
-bee_localstore_leveldb_stats_count{counter="level_2_write"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_2_write"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_duration",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_3_duration"} 0
-bee_localstore_leveldb_stats_count{counter="level_3_duration"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_3_duration"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_read",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_3_read"} 0
-bee_localstore_leveldb_stats_count{counter="level_3_read"} 22
+bee_localstore_leveldb_stats_count{counter="level_3_read"} 35
 bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="0.025"} 0
@@ -719,9 +719,9 @@ bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_3_size"} 1.4701695118e+10
-bee_localstore_leveldb_stats_count{counter="level_3_size"} 22
+bee_localstore_leveldb_stats_bucket{counter="level_3_size",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_3_size"} 2.401846251e+10
+bee_localstore_leveldb_stats_count{counter="level_3_size"} 35
 bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="0.025"} 0
@@ -733,51 +733,51 @@ bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="2.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="5"} 0
 bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="level_3_tables_count"} 6600
-bee_localstore_leveldb_stats_count{counter="level_3_tables_count"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="+Inf"} 22
+bee_localstore_leveldb_stats_bucket{counter="level_3_tables_count",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="level_3_tables_count"} 10780
+bee_localstore_leveldb_stats_count{counter="level_3_tables_count"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="level_3_write",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="level_3_write"} 0
-bee_localstore_leveldb_stats_count{counter="level_3_write"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="mem_comp"} 0
-bee_localstore_leveldb_stats_count{counter="mem_comp"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="level_3_write"} 35
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.005"} 19
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.01"} 19
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.025"} 19
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.05"} 19
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.1"} 19
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.25"} 19
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="0.5"} 19
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="1"} 25
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="mem_comp",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="mem_comp"} 26
+bee_localstore_leveldb_stats_count{counter="mem_comp"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="non_level_0_comp",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="non_level_0_comp"} 0
-bee_localstore_leveldb_stats_count{counter="non_level_0_comp"} 22
+bee_localstore_leveldb_stats_count{counter="non_level_0_comp"} 35
 bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="0.005"} 0
 bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="0.01"} 0
 bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="0.025"} 0
@@ -787,72 +787,72 @@ bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="0.25"} 0
 bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="0.5"} 0
 bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="1"} 0
 bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="2.5"} 0
-bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="5"} 0
-bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="10"} 0
-bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="+Inf"} 22
-bee_localstore_leveldb_stats_sum{counter="opened_tables_count"} 318
-bee_localstore_leveldb_stats_count{counter="opened_tables_count"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="+Inf"} 22
+bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="5"} 13
+bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="10"} 29
+bee_localstore_leveldb_stats_bucket{counter="opened_tables_count",le="+Inf"} 35
+bee_localstore_leveldb_stats_sum{counter="opened_tables_count"} 637
+bee_localstore_leveldb_stats_count{counter="opened_tables_count"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="seek_comp",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="seek_comp"} 0
-bee_localstore_leveldb_stats_count{counter="seek_comp"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="seek_comp"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_count",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="write_delay_count"} 0
-bee_localstore_leveldb_stats_count{counter="write_delay_count"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.005"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.01"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.025"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.05"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.1"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.25"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="1"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="2.5"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="5"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="10"} 22
-bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="+Inf"} 22
+bee_localstore_leveldb_stats_count{counter="write_delay_count"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.005"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.01"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.025"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.05"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.1"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.25"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="0.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="1"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="2.5"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="5"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="10"} 35
+bee_localstore_leveldb_stats_bucket{counter="write_delay_duration",le="+Inf"} 35
 bee_localstore_leveldb_stats_sum{counter="write_delay_duration"} 0
-bee_localstore_leveldb_stats_count{counter="write_delay_duration"} 22
+bee_localstore_leveldb_stats_count{counter="write_delay_duration"} 35
 # HELP bee_localstore_method_calls Number of method calls.
 # TYPE bee_localstore_method_calls counter
-bee_localstore_method_calls{component="uploadstore",method="Put",status="success"} 2048
+bee_localstore_method_calls{component="uploadstore",method="Put",status="success"} 65536
 # HELP bee_localstore_method_calls_duration Duration of method calls.
 # TYPE bee_localstore_method_calls_duration histogram
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.005"} 2046
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.01"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.025"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.05"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.1"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.25"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.5"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="1"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="2.5"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="5"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="10"} 2048
-bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="+Inf"} 2048
-bee_localstore_method_calls_duration_sum{component="uploadstore",method="Put"} 0.6154466979999998
-bee_localstore_method_calls_duration_count{component="uploadstore",method="Put"} 2048
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.005"} 65458
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.01"} 65509
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.025"} 65532
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.05"} 65535
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.1"} 65536
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.25"} 65536
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="0.5"} 65536
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="1"} 65536
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="2.5"} 65536
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="5"} 65536
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="10"} 65536
+bee_localstore_method_calls_duration_bucket{component="uploadstore",method="Put",le="+Inf"} 65536
+bee_localstore_method_calls_duration_sum{component="uploadstore",method="Put"} 12.848796421999984
+bee_localstore_method_calls_duration_count{component="uploadstore",method="Put"} 65536
 # HELP bee_localstore_over_cap_trigger_count Number of times the reserve was over capacity and triggered an eviction.
 # TYPE bee_localstore_over_cap_trigger_count counter
 bee_localstore_over_cap_trigger_count 0
@@ -876,7 +876,7 @@ bee_localstore_storage_radius 0
 bee_log_debug_count 0
 # HELP bee_log_error_count Number ERROR log messages.
 # TYPE bee_log_error_count counter
-bee_log_error_count 35
+bee_log_error_count 44
 # HELP bee_log_info_count Number INFO log messages.
 # TYPE bee_log_info_count counter
 bee_log_info_count 22
@@ -885,7 +885,7 @@ bee_log_info_count 22
 bee_log_trace_count 0
 # HELP bee_log_warn_count Number WARN log messages.
 # TYPE bee_log_warn_count counter
-bee_log_warn_count 53
+bee_log_warn_count 1075
 # HELP bee_pingpong_ping_received_count Number ping requests received.
 # TYPE bee_pingpong_ping_received_count counter
 bee_pingpong_ping_received_count 0
@@ -900,7 +900,7 @@ bee_pingpong_pong_received_count 0
 bee_pingpong_pong_sent_count 0
 # HELP bee_postage_listener_backend_calls total chain backend calls
 # TYPE bee_postage_listener_backend_calls counter
-bee_postage_listener_backend_calls 31
+bee_postage_listener_backend_calls 48
 # HELP bee_postage_listener_backend_errors total chain backend errors
 # TYPE bee_postage_listener_backend_errors counter
 bee_postage_listener_backend_errors 0
@@ -912,37 +912,37 @@ bee_postage_listener_created_events 1
 bee_postage_listener_depth_events 0
 # HELP bee_postage_listener_event_duration how long it took to process a single event
 # TYPE bee_postage_listener_event_duration counter
-bee_postage_listener_event_duration 1.0754875e+07
+bee_postage_listener_event_duration 8.923375e+06
 # HELP bee_postage_listener_event_errors total event errors while processing
 # TYPE bee_postage_listener_event_errors counter
 bee_postage_listener_event_errors 0
 # HELP bee_postage_listener_events_processed total events processed
 # TYPE bee_postage_listener_events_processed counter
-bee_postage_listener_events_processed 2
+bee_postage_listener_events_processed 4
 # HELP bee_postage_listener_page_duration how long it took to process a page
 # TYPE bee_postage_listener_page_duration counter
-bee_postage_listener_page_duration 1.299120582e+09
+bee_postage_listener_page_duration 2.07633325e+09
 # HELP bee_postage_listener_pages_processed total pages processed
 # TYPE bee_postage_listener_pages_processed counter
-bee_postage_listener_pages_processed 14
+bee_postage_listener_pages_processed 22
 # HELP bee_postage_listener_price_events total price change events handled
 # TYPE bee_postage_listener_price_events counter
-bee_postage_listener_price_events 1
+bee_postage_listener_price_events 3
 # HELP bee_postage_listener_topup_events total batch topup events handled
 # TYPE bee_postage_listener_topup_events counter
 bee_postage_listener_topup_events 0
 # HELP bee_process_cpu_seconds_total Total user and system CPU time spent in seconds.
 # TYPE bee_process_cpu_seconds_total counter
-bee_process_cpu_seconds_total 24.167933
+bee_process_cpu_seconds_total 589.055848
 # HELP bee_process_max_fds Maximum number of open file descriptors.
 # TYPE bee_process_max_fds gauge
 bee_process_max_fds 61440
 # HELP bee_process_open_fds Number of open file descriptors.
 # TYPE bee_process_open_fds gauge
-bee_process_open_fds 267
+bee_process_open_fds 328
 # HELP bee_process_start_time_seconds Start time of the process since unix epoch in seconds.
 # TYPE bee_process_start_time_seconds gauge
-bee_process_start_time_seconds 1.753128225e+09
+bee_process_start_time_seconds 1.753130302e+09
 # HELP bee_process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
 # TYPE bee_process_virtual_memory_max_bytes gauge
 bee_process_virtual_memory_max_bytes 9.223372036854776e+18
@@ -954,7 +954,7 @@ bee_pseudosettle_received_pseudosettlements 0
 bee_pseudosettle_received_pseudosettlements_errors 0
 # HELP bee_pseudosettle_sent_pseudosettlements Number of time settlements sent to peers
 # TYPE bee_pseudosettle_sent_pseudosettlements counter
-bee_pseudosettle_sent_pseudosettlements 822
+bee_pseudosettle_sent_pseudosettlements 30694
 # HELP bee_pseudosettle_sent_pseudosettlements_errorss Errors of time settlements sent to peers
 # TYPE bee_pseudosettle_sent_pseudosettlements_errorss counter
 bee_pseudosettle_sent_pseudosettlements_errorss 0
@@ -963,7 +963,7 @@ bee_pseudosettle_sent_pseudosettlements_errorss 0
 bee_pseudosettle_total_received_pseudosettlements 0
 # HELP bee_pseudosettle_total_sent_pseudosettlements Amount of  of time settlements sent to peers (costs paid by the node)
 # TYPE bee_pseudosettle_total_sent_pseudosettlements counter
-bee_pseudosettle_total_sent_pseudosettlements 4.6282e+08
+bee_pseudosettle_total_sent_pseudosettlements 1.802572e+10
 # HELP bee_pss_mining_duration Time duration to mine a message.
 # TYPE bee_pss_mining_duration gauge
 bee_pss_mining_duration 0
@@ -1005,36 +1005,36 @@ bee_pullsync_received_zero_address 0
 bee_pusher_error_time_bucket{le="0.1"} 0
 bee_pusher_error_time_bucket{le="0.25"} 0
 bee_pusher_error_time_bucket{le="0.5"} 0
-bee_pusher_error_time_bucket{le="1"} 0
-bee_pusher_error_time_bucket{le="2.5"} 0
-bee_pusher_error_time_bucket{le="5"} 0
-bee_pusher_error_time_bucket{le="10"} 0
-bee_pusher_error_time_bucket{le="60"} 0
-bee_pusher_error_time_bucket{le="+Inf"} 0
-bee_pusher_error_time_sum 0
-bee_pusher_error_time_count 0
+bee_pusher_error_time_bucket{le="1"} 3
+bee_pusher_error_time_bucket{le="2.5"} 5
+bee_pusher_error_time_bucket{le="5"} 5
+bee_pusher_error_time_bucket{le="10"} 5
+bee_pusher_error_time_bucket{le="60"} 5
+bee_pusher_error_time_bucket{le="+Inf"} 5
+bee_pusher_error_time_sum 4.60105
+bee_pusher_error_time_count 5
 # HELP bee_pusher_sync_time Histogram of time spent to sync a chunk.
 # TYPE bee_pusher_sync_time histogram
-bee_pusher_sync_time_bucket{le="0.1"} 434
-bee_pusher_sync_time_bucket{le="0.25"} 1146
-bee_pusher_sync_time_bucket{le="0.5"} 1301
-bee_pusher_sync_time_bucket{le="1"} 1799
-bee_pusher_sync_time_bucket{le="2.5"} 2007
-bee_pusher_sync_time_bucket{le="5"} 2041
-bee_pusher_sync_time_bucket{le="10"} 2048
-bee_pusher_sync_time_bucket{le="60"} 2048
-bee_pusher_sync_time_bucket{le="+Inf"} 2048
-bee_pusher_sync_time_sum 983.6426013729971
-bee_pusher_sync_time_count 2048
+bee_pusher_sync_time_bucket{le="0.1"} 15334
+bee_pusher_sync_time_bucket{le="0.25"} 28569
+bee_pusher_sync_time_bucket{le="0.5"} 29008
+bee_pusher_sync_time_bucket{le="1"} 54157
+bee_pusher_sync_time_bucket{le="2.5"} 63896
+bee_pusher_sync_time_bucket{le="5"} 65421
+bee_pusher_sync_time_bucket{le="10"} 65541
+bee_pusher_sync_time_bucket{le="60"} 65541
+bee_pusher_sync_time_bucket{le="+Inf"} 65541
+bee_pusher_sync_time_sum 38920.079940770025
+bee_pusher_sync_time_count 65541
 # HELP bee_pusher_total_errors Total errors encountered.
 # TYPE bee_pusher_total_errors counter
-bee_pusher_total_errors 0
+bee_pusher_total_errors 5
 # HELP bee_pusher_total_synced Total chunks synced successfully with valid receipts.
 # TYPE bee_pusher_total_synced counter
-bee_pusher_total_synced 2048
+bee_pusher_total_synced 65541
 # HELP bee_pusher_total_to_push Total chunks to push (chunks may be repeated).
 # TYPE bee_pusher_total_to_push counter
-bee_pusher_total_to_push 2048
+bee_pusher_total_to_push 65541
 # HELP bee_pushsync_forwarder No of times the peer is a forwarder node.
 # TYPE bee_pushsync_forwarder counter
 bee_pushsync_forwarder 0
@@ -1043,48 +1043,73 @@ bee_pushsync_forwarder 0
 bee_pushsync_invalid_stamps 0
 # HELP bee_pushsync_push_peer_time Histogram for time taken to push a chunk to a peer.
 # TYPE bee_pushsync_push_peer_time histogram
+bee_pushsync_push_peer_time_bucket{status="failure",le="0.005"} 0
+bee_pushsync_push_peer_time_bucket{status="failure",le="0.01"} 0
+bee_pushsync_push_peer_time_bucket{status="failure",le="0.025"} 0
+bee_pushsync_push_peer_time_bucket{status="failure",le="0.05"} 0
+bee_pushsync_push_peer_time_bucket{status="failure",le="0.1"} 0
+bee_pushsync_push_peer_time_bucket{status="failure",le="0.25"} 6
+bee_pushsync_push_peer_time_bucket{status="failure",le="0.5"} 6
+bee_pushsync_push_peer_time_bucket{status="failure",le="1"} 9
+bee_pushsync_push_peer_time_bucket{status="failure",le="2.5"} 9
+bee_pushsync_push_peer_time_bucket{status="failure",le="5"} 9
+bee_pushsync_push_peer_time_bucket{status="failure",le="10"} 9
+bee_pushsync_push_peer_time_bucket{status="failure",le="+Inf"} 9
+bee_pushsync_push_peer_time_sum{status="failure"} 2.267405916
+bee_pushsync_push_peer_time_count{status="failure"} 9
 bee_pushsync_push_peer_time_bucket{status="success",le="0.005"} 0
 bee_pushsync_push_peer_time_bucket{status="success",le="0.01"} 0
 bee_pushsync_push_peer_time_bucket{status="success",le="0.025"} 0
 bee_pushsync_push_peer_time_bucket{status="success",le="0.05"} 0
-bee_pushsync_push_peer_time_bucket{status="success",le="0.1"} 535
-bee_pushsync_push_peer_time_bucket{status="success",le="0.25"} 1258
-bee_pushsync_push_peer_time_bucket{status="success",le="0.5"} 1405
-bee_pushsync_push_peer_time_bucket{status="success",le="1"} 1950
-bee_pushsync_push_peer_time_bucket{status="success",le="2.5"} 2048
-bee_pushsync_push_peer_time_bucket{status="success",le="5"} 2048
-bee_pushsync_push_peer_time_bucket{status="success",le="10"} 2048
-bee_pushsync_push_peer_time_bucket{status="success",le="+Inf"} 2048
-bee_pushsync_push_peer_time_sum{status="success"} 693.1924810459997
-bee_pushsync_push_peer_time_count{status="success"} 2048
+bee_pushsync_push_peer_time_bucket{status="success",le="0.1"} 19890
+bee_pushsync_push_peer_time_bucket{status="success",le="0.25"} 35462
+bee_pushsync_push_peer_time_bucket{status="success",le="0.5"} 36039
+bee_pushsync_push_peer_time_bucket{status="success",le="1"} 64333
+bee_pushsync_push_peer_time_bucket{status="success",le="2.5"} 65541
+bee_pushsync_push_peer_time_bucket{status="success",le="5"} 65541
+bee_pushsync_push_peer_time_bucket{status="success",le="10"} 65541
+bee_pushsync_push_peer_time_bucket{status="success",le="+Inf"} 65541
+bee_pushsync_push_peer_time_sum{status="success"} 22378.3077231152
+bee_pushsync_push_peer_time_count{status="success"} 65541
 # HELP bee_pushsync_receipt_depth Counter of receipts received at different depths.
 # TYPE bee_pushsync_receipt_depth counter
-bee_pushsync_receipt_depth{depth="10"} 940
-bee_pushsync_receipt_depth{depth="11"} 558
-bee_pushsync_receipt_depth{depth="12"} 279
-bee_pushsync_receipt_depth{depth="13"} 143
-bee_pushsync_receipt_depth{depth="14"} 67
-bee_pushsync_receipt_depth{depth="15"} 34
-bee_pushsync_receipt_depth{depth="16"} 15
-bee_pushsync_receipt_depth{depth="17"} 6
-bee_pushsync_receipt_depth{depth="18"} 4
-bee_pushsync_receipt_depth{depth="19"} 1
-bee_pushsync_receipt_depth{depth="21"} 1
+bee_pushsync_receipt_depth{depth="10"} 30104
+bee_pushsync_receipt_depth{depth="11"} 17554
+bee_pushsync_receipt_depth{depth="12"} 8937
+bee_pushsync_receipt_depth{depth="13"} 4471
+bee_pushsync_receipt_depth{depth="14"} 2192
+bee_pushsync_receipt_depth{depth="15"} 1132
+bee_pushsync_receipt_depth{depth="16"} 567
+bee_pushsync_receipt_depth{depth="17"} 276
+bee_pushsync_receipt_depth{depth="18"} 130
+bee_pushsync_receipt_depth{depth="19"} 83
+bee_pushsync_receipt_depth{depth="20"} 38
+bee_pushsync_receipt_depth{depth="21"} 22
+bee_pushsync_receipt_depth{depth="22"} 12
+bee_pushsync_receipt_depth{depth="23"} 4
+bee_pushsync_receipt_depth{depth="24"} 2
+bee_pushsync_receipt_depth{depth="25"} 1
+bee_pushsync_receipt_depth{depth="26"} 2
+bee_pushsync_receipt_depth{depth="9"} 9
 # HELP bee_pushsync_shallow_receipt Total shallow receipts.
 # TYPE bee_pushsync_shallow_receipt counter
-bee_pushsync_shallow_receipt 0
+bee_pushsync_shallow_receipt 5
+# HELP bee_pushsync_shallow_receipt_depth Counter of shallow receipts received at different depths.
+# TYPE bee_pushsync_shallow_receipt_depth counter
+bee_pushsync_shallow_receipt_depth{depth="10"} 2
+bee_pushsync_shallow_receipt_depth{depth="9"} 3
 # HELP bee_pushsync_storer No of times the peer is a storer node.
 # TYPE bee_pushsync_storer counter
 bee_pushsync_storer 0
 # HELP bee_pushsync_total_failed_send_attempts Total no of failed attempts to push chunk.
 # TYPE bee_pushsync_total_failed_send_attempts counter
-bee_pushsync_total_failed_send_attempts 0
+bee_pushsync_total_failed_send_attempts 9
 # HELP bee_pushsync_total_handler_errors Total no of error occurred while handling an incoming delivery (either while storing or forwarding).
 # TYPE bee_pushsync_total_handler_errors counter
 bee_pushsync_total_handler_errors 0
 # HELP bee_pushsync_total_outgoing Total no of chunks requested to be synced (calls on exported PushChunkToClosest)
 # TYPE bee_pushsync_total_outgoing counter
-bee_pushsync_total_outgoing 2048
+bee_pushsync_total_outgoing 65541
 # HELP bee_pushsync_total_outgoing_errors Total no of errors of entire operation to sync a chunk (multiple attempts included)
 # TYPE bee_pushsync_total_outgoing_errors counter
 bee_pushsync_total_outgoing_errors 0
@@ -1093,13 +1118,13 @@ bee_pushsync_total_outgoing_errors 0
 bee_pushsync_total_received 0
 # HELP bee_pushsync_total_requests Total no of requests to push a chunk into the network (from origin nodes or not).
 # TYPE bee_pushsync_total_requests counter
-bee_pushsync_total_requests 2048
+bee_pushsync_total_requests 65541
 # HELP bee_pushsync_total_send_attempts Total no of attempts to push chunk.
 # TYPE bee_pushsync_total_send_attempts counter
-bee_pushsync_total_send_attempts 2203
+bee_pushsync_total_send_attempts 69884
 # HELP bee_pushsync_total_sent Total chunks sent.
 # TYPE bee_pushsync_total_sent counter
-bee_pushsync_total_sent 2193
+bee_pushsync_total_sent 69830
 # HELP bee_retrieval_chunk_price The price of the chunk that was paid.
 # TYPE bee_retrieval_chunk_price summary
 bee_retrieval_chunk_price_sum 0
@@ -1175,13 +1200,13 @@ bee_retrieval_total_errors 0
 bee_retrieval_total_retrieved 0
 # HELP bee_salud_batch_commitment Most common batch commitment.
 # TYPE bee_salud_batch_commitment gauge
-bee_salud_batch_commitment 1.7661820928e+10
+bee_salud_batch_commitment 1.7661952e+10
 # HELP bee_salud_dur Average duration for snapshot response.
 # TYPE bee_salud_dur gauge
-bee_salud_dur 0.3605279947315435
+bee_salud_dur 0.32473469832214763
 # HELP bee_salud_healthy Count of healthy peers.
 # TYPE bee_salud_healthy counter
-bee_salud_healthy 325
+bee_salud_healthy 327
 # HELP bee_salud_neighborhood_radius Most common radius across the connected peers.
 # TYPE bee_salud_neighborhood_radius gauge
 bee_salud_neighborhood_radius 0
@@ -1193,22 +1218,22 @@ bee_salud_network_radius 10
 bee_salud_pconns 169
 # HELP bee_salud_pdur Percentile of durations for snapshot response.
 # TYPE bee_salud_pdur gauge
-bee_salud_pdur 0.1748015
+bee_salud_pdur 0.109479291
 # HELP bee_salud_reserve_size_percentage_err Percentage error of the reservesize relative to the network average.
 # TYPE bee_salud_reserve_size_percentage_err gauge
 bee_salud_reserve_size_percentage_err 0
 # HELP bee_salud_unhealthy Count of unhealthy peers.
 # TYPE bee_salud_unhealthy counter
-bee_salud_unhealthy 413
+bee_salud_unhealthy 407
 # HELP bee_storage_cache_cache_hit Total cache hits.
 # TYPE bee_storage_cache_cache_hit counter
-bee_storage_cache_cache_hit 846480
+bee_storage_cache_cache_hit 4.4902279e+07
 # HELP bee_storage_cache_cache_miss Total cache misses.
 # TYPE bee_storage_cache_cache_miss counter
-bee_storage_cache_cache_miss 2979
+bee_storage_cache_cache_miss 2949
 # HELP bee_swap_available_balance Currently available chequebook balance.
 # TYPE bee_swap_available_balance gauge
-bee_swap_available_balance 5.037548288035854e+15
+bee_swap_available_balance 4.712946288029054e+15
 # HELP bee_swap_cheques_received Number of cheques received from peers
 # TYPE bee_swap_cheques_received counter
 bee_swap_cheques_received 0
@@ -1217,205 +1242,205 @@ bee_swap_cheques_received 0
 bee_swap_cheques_rejected 0
 # HELP bee_swap_cheques_sent Number of cheques sent to peers
 # TYPE bee_swap_cheques_sent counter
-bee_swap_cheques_sent 125
+bee_swap_cheques_sent 3352
 # HELP bee_swap_total_received Amount of tokens received from peers (income of the node)
 # TYPE bee_swap_total_received counter
 bee_swap_total_received 0
 # HELP bee_swap_total_sent Amount of tokens sent to peers (costs paid by the node)
 # TYPE bee_swap_total_sent counter
-bee_swap_total_sent 9.97e+07
+bee_swap_total_sent 3.27231e+09
 # HELP bee_transaction_method_calls The number of method calls.
 # TYPE bee_transaction_method_calls counter
-bee_transaction_method_calls{method="batch_commit",status="success"} 12444
-bee_transaction_method_calls{method="chunkstore_delete",status="success"} 2048
-bee_transaction_method_calls{method="chunkstore_get",status="failure"} 5
-bee_transaction_method_calls{method="chunkstore_get",status="success"} 2524
-bee_transaction_method_calls{method="chunkstore_put",status="success"} 2048
-bee_transaction_method_calls{method="commit",status="success"} 12444
-bee_transaction_method_calls{method="iterate",status="failure"} 5
-bee_transaction_method_calls{method="iterate",status="success"} 2557
-bee_transaction_method_calls{method="sharky_read",status="success"} 2524
-bee_transaction_method_calls{method="sharky_release",status="success"} 2048
-bee_transaction_method_calls{method="sharky_write",status="success"} 2048
+bee_transaction_method_calls{method="batch_commit",status="success"} 397559
+bee_transaction_method_calls{method="chunkstore_delete",status="success"} 65536
+bee_transaction_method_calls{method="chunkstore_get",status="failure"} 15
+bee_transaction_method_calls{method="chunkstore_get",status="success"} 66348
+bee_transaction_method_calls{method="chunkstore_put",status="success"} 65536
+bee_transaction_method_calls{method="commit",status="success"} 397559
+bee_transaction_method_calls{method="iterate",status="failure"} 15
+bee_transaction_method_calls{method="iterate",status="success"} 66384
+bee_transaction_method_calls{method="sharky_read",status="success"} 66348
+bee_transaction_method_calls{method="sharky_release",status="success"} 65536
+bee_transaction_method_calls{method="sharky_write",status="success"} 65536
 # HELP bee_transaction_method_duration The duration each method call took.
 # TYPE bee_transaction_method_duration histogram
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.005"} 12442
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.01"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.025"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.05"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.1"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.25"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.5"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="1"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="2.5"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="5"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="10"} 12444
-bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="+Inf"} 12444
-bee_transaction_method_duration_sum{method="batch_commit",status="success"} 1.2995729410000019
-bee_transaction_method_duration_count{method="batch_commit",status="success"} 12444
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.005"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.01"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.025"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.05"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.1"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.25"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.5"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="1"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="2.5"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="5"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="10"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="+Inf"} 2048
-bee_transaction_method_duration_sum{method="chunkstore_delete",status="success"} 0.011866520999999988
-bee_transaction_method_duration_count{method="chunkstore_delete",status="success"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.005"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.01"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.025"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.05"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.1"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.25"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.5"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="1"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="2.5"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="5"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="10"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="+Inf"} 5
-bee_transaction_method_duration_sum{method="chunkstore_get",status="failure"} 2.3583e-05
-bee_transaction_method_duration_count{method="chunkstore_get",status="failure"} 5
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.005"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.01"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.025"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.05"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.1"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.25"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.5"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="1"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="2.5"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="5"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="10"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="+Inf"} 2524
-bee_transaction_method_duration_sum{method="chunkstore_get",status="success"} 0.03188629200000005
-bee_transaction_method_duration_count{method="chunkstore_get",status="success"} 2524
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.005"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.01"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.025"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.05"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.1"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.25"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.5"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="1"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="2.5"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="5"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="10"} 2048
-bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="+Inf"} 2048
-bee_transaction_method_duration_sum{method="chunkstore_put",status="success"} 0.26392037599999996
-bee_transaction_method_duration_count{method="chunkstore_put",status="success"} 2048
-bee_transaction_method_duration_bucket{method="commit",status="success",le="0.005"} 12442
-bee_transaction_method_duration_bucket{method="commit",status="success",le="0.01"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="0.025"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="0.05"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="0.1"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="0.25"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="0.5"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="1"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="2.5"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="5"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="10"} 12444
-bee_transaction_method_duration_bucket{method="commit",status="success",le="+Inf"} 12444
-bee_transaction_method_duration_sum{method="commit",status="success"} 1.3211546820000062
-bee_transaction_method_duration_count{method="commit",status="success"} 12444
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.005"} 2
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.01"} 4
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.025"} 4
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.05"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.1"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.25"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.5"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="1"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="2.5"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="5"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="10"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="failure",le="+Inf"} 5
-bee_transaction_method_duration_sum{method="iterate",status="failure"} 0.047847542
-bee_transaction_method_duration_count{method="iterate",status="failure"} 5
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.005"} 2549
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.01"} 2552
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.025"} 2552
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.05"} 2553
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.1"} 2553
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.25"} 2553
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.5"} 2554
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="1"} 2555
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="2.5"} 2556
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="5"} 2557
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="10"} 2557
-bee_transaction_method_duration_bucket{method="iterate",status="success",le="+Inf"} 2557
-bee_transaction_method_duration_sum{method="iterate",status="success"} 6.038063691000007
-bee_transaction_method_duration_count{method="iterate",status="success"} 2557
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.005"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.01"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.025"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.05"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.1"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.25"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.5"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="1"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="2.5"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="5"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="10"} 2524
-bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="+Inf"} 2524
-bee_transaction_method_duration_sum{method="sharky_read",status="success"} 0.021814152
-bee_transaction_method_duration_count{method="sharky_read",status="success"} 2524
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.005"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.01"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.025"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.05"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.1"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.25"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.5"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="1"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="2.5"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="5"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="10"} 2048
-bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="+Inf"} 2048
-bee_transaction_method_duration_sum{method="sharky_release",status="success"} 0.010281021000000001
-bee_transaction_method_duration_count{method="sharky_release",status="success"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.005"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.01"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.025"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.05"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.1"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.25"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.5"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="1"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="2.5"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="5"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="10"} 2048
-bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="+Inf"} 2048
-bee_transaction_method_duration_sum{method="sharky_write",status="success"} 0.2265504049999994
-bee_transaction_method_duration_count{method="sharky_write",status="success"} 2048
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.005"} 12440
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.01"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.025"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.05"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.1"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.25"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.5"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="1"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="2.5"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="5"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="10"} 12444
-bee_transaction_method_duration_bucket{method="transaction",status="success",le="+Inf"} 12444
-bee_transaction_method_duration_sum{method="transaction",status="success"} 1.6968739949999996
-bee_transaction_method_duration_count{method="transaction",status="success"} 12444
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.005"} 397232
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.01"} 397487
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.025"} 397555
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.05"} 397558
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.1"} 397559
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.25"} 397559
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="0.5"} 397559
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="1"} 397559
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="2.5"} 397559
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="5"} 397559
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="10"} 397559
+bee_transaction_method_duration_bucket{method="batch_commit",status="success",le="+Inf"} 397559
+bee_transaction_method_duration_sum{method="batch_commit",status="success"} 55.53624008000537
+bee_transaction_method_duration_count{method="batch_commit",status="success"} 397559
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.005"} 65535
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.01"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.025"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.05"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.1"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.25"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="0.5"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="1"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="2.5"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="5"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="10"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_delete",status="success",le="+Inf"} 65536
+bee_transaction_method_duration_sum{method="chunkstore_delete",status="success"} 0.49819338799999924
+bee_transaction_method_duration_count{method="chunkstore_delete",status="success"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.005"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.01"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.025"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.05"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.1"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.25"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="0.5"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="1"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="2.5"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="5"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="10"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="failure",le="+Inf"} 15
+bee_transaction_method_duration_sum{method="chunkstore_get",status="failure"} 7.604300000000002e-05
+bee_transaction_method_duration_count{method="chunkstore_get",status="failure"} 15
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.005"} 66288
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.01"} 66329
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.025"} 66345
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.05"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.1"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.25"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="0.5"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="1"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="2.5"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="5"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="10"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_get",status="success",le="+Inf"} 66348
+bee_transaction_method_duration_sum{method="chunkstore_get",status="success"} 7.481124969999926
+bee_transaction_method_duration_count{method="chunkstore_get",status="success"} 66348
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.005"} 65519
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.01"} 65529
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.025"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.05"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.1"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.25"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="0.5"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="1"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="2.5"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="5"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="10"} 65536
+bee_transaction_method_duration_bucket{method="chunkstore_put",status="success",le="+Inf"} 65536
+bee_transaction_method_duration_sum{method="chunkstore_put",status="success"} 4.198814781999986
+bee_transaction_method_duration_count{method="chunkstore_put",status="success"} 65536
+bee_transaction_method_duration_bucket{method="commit",status="success",le="0.005"} 397227
+bee_transaction_method_duration_bucket{method="commit",status="success",le="0.01"} 397482
+bee_transaction_method_duration_bucket{method="commit",status="success",le="0.025"} 397555
+bee_transaction_method_duration_bucket{method="commit",status="success",le="0.05"} 397558
+bee_transaction_method_duration_bucket{method="commit",status="success",le="0.1"} 397559
+bee_transaction_method_duration_bucket{method="commit",status="success",le="0.25"} 397559
+bee_transaction_method_duration_bucket{method="commit",status="success",le="0.5"} 397559
+bee_transaction_method_duration_bucket{method="commit",status="success",le="1"} 397559
+bee_transaction_method_duration_bucket{method="commit",status="success",le="2.5"} 397559
+bee_transaction_method_duration_bucket{method="commit",status="success",le="5"} 397559
+bee_transaction_method_duration_bucket{method="commit",status="success",le="10"} 397559
+bee_transaction_method_duration_bucket{method="commit",status="success",le="+Inf"} 397559
+bee_transaction_method_duration_sum{method="commit",status="success"} 56.17114088400765
+bee_transaction_method_duration_count{method="commit",status="success"} 397559
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.005"} 5
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.01"} 9
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.025"} 13
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.05"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.1"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.25"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="0.5"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="1"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="2.5"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="5"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="10"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="failure",le="+Inf"} 15
+bee_transaction_method_duration_sum{method="iterate",status="failure"} 0.183678999
+bee_transaction_method_duration_count{method="iterate",status="failure"} 15
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.005"} 66353
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.01"} 66361
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.025"} 66370
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.05"} 66370
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.1"} 66370
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.25"} 66371
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="0.5"} 66372
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="1"} 66372
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="2.5"} 66373
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="5"} 66375
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="10"} 66376
+bee_transaction_method_duration_bucket{method="iterate",status="success",le="+Inf"} 66384
+bee_transaction_method_duration_sum{method="iterate",status="success"} 301.7752008939974
+bee_transaction_method_duration_count{method="iterate",status="success"} 66384
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.005"} 66294
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.01"} 66329
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.025"} 66345
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.05"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.1"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.25"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="0.5"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="1"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="2.5"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="5"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="10"} 66348
+bee_transaction_method_duration_bucket{method="sharky_read",status="success",le="+Inf"} 66348
+bee_transaction_method_duration_sum{method="sharky_read",status="success"} 7.033813853000038
+bee_transaction_method_duration_count{method="sharky_read",status="success"} 66348
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.005"} 65533
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.01"} 65535
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.025"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.05"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.1"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.25"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="0.5"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="1"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="2.5"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="5"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="10"} 65536
+bee_transaction_method_duration_bucket{method="sharky_release",status="success",le="+Inf"} 65536
+bee_transaction_method_duration_sum{method="sharky_release",status="success"} 0.35510232600000846
+bee_transaction_method_duration_count{method="sharky_release",status="success"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.005"} 65519
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.01"} 65530
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.025"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.05"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.1"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.25"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="0.5"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="1"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="2.5"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="5"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="10"} 65536
+bee_transaction_method_duration_bucket{method="sharky_write",status="success",le="+Inf"} 65536
+bee_transaction_method_duration_sum{method="sharky_write",status="success"} 3.41429653199997
+bee_transaction_method_duration_count{method="sharky_write",status="success"} 65536
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.005"} 397166
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.01"} 397459
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.025"} 397554
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.05"} 397558
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.1"} 397559
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.25"} 397559
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="0.5"} 397559
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="1"} 397559
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="2.5"} 397559
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="5"} 397559
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="10"} 397559
+bee_transaction_method_duration_bucket{method="transaction",status="success",le="+Inf"} 397559
+bee_transaction_method_duration_sum{method="transaction",status="success"} 65.1109645730031
+bee_transaction_method_duration_count{method="transaction",status="success"} 397559
 # HELP go_gc_duration_seconds A summary of the wall-time pause (stop-the-world) duration in garbage collection cycles.
 # TYPE go_gc_duration_seconds summary
-go_gc_duration_seconds{quantile="0"} 3.1167e-05
-go_gc_duration_seconds{quantile="0.25"} 5.8251e-05
-go_gc_duration_seconds{quantile="0.5"} 0.000102042
-go_gc_duration_seconds{quantile="0.75"} 0.000236333
-go_gc_duration_seconds{quantile="1"} 0.004058876
-go_gc_duration_seconds_sum 0.030330384
-go_gc_duration_seconds_count 59
+go_gc_duration_seconds{quantile="0"} 4.1625e-05
+go_gc_duration_seconds{quantile="0.25"} 8.4626e-05
+go_gc_duration_seconds{quantile="0.5"} 0.000144167
+go_gc_duration_seconds{quantile="0.75"} 0.00020225
+go_gc_duration_seconds{quantile="1"} 0.006355375
+go_gc_duration_seconds_sum 0.98513645
+go_gc_duration_seconds_count 1294
 # HELP go_gc_gogc_percent Heap size target percentage configured by the user, otherwise 100. This value is set by the GOGC environment variable, and the runtime/debug.SetGCPercent function. Sourced from /gc/gogc:percent.
 # TYPE go_gc_gogc_percent gauge
 go_gc_gogc_percent 100
@@ -1424,49 +1449,49 @@ go_gc_gogc_percent 100
 go_gc_gomemlimit_bytes 9.223372036854776e+18
 # HELP go_goroutines Number of goroutines that currently exist.
 # TYPE go_goroutines gauge
-go_goroutines 838
+go_goroutines 851
 # HELP go_info Information about the Go environment.
 # TYPE go_info gauge
 go_info{version="go1.24.2"} 1
 # HELP go_memstats_alloc_bytes Number of bytes allocated in heap and currently in use. Equals to /memory/classes/heap/objects:bytes.
 # TYPE go_memstats_alloc_bytes gauge
-go_memstats_alloc_bytes 1.3427404e+08
+go_memstats_alloc_bytes 2.18488648e+08
 # HELP go_memstats_alloc_bytes_total Total number of bytes allocated in heap until now, even if released already. Equals to /gc/heap/allocs:bytes.
 # TYPE go_memstats_alloc_bytes_total counter
-go_memstats_alloc_bytes_total 4.953225776e+09
+go_memstats_alloc_bytes_total 1.58967175192e+11
 # HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table. Equals to /memory/classes/profiling/buckets:bytes.
 # TYPE go_memstats_buck_hash_sys_bytes gauge
-go_memstats_buck_hash_sys_bytes 1.723733e+06
+go_memstats_buck_hash_sys_bytes 2.198765e+06
 # HELP go_memstats_frees_total Total number of heap objects frees. Equals to /gc/heap/frees:objects + /gc/heap/tiny/allocs:objects.
 # TYPE go_memstats_frees_total counter
-go_memstats_frees_total 3.2568953e+07
+go_memstats_frees_total 1.371376452e+09
 # HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata. Equals to /memory/classes/metadata/other:bytes.
 # TYPE go_memstats_gc_sys_bytes gauge
-go_memstats_gc_sys_bytes 5.829016e+06
+go_memstats_gc_sys_bytes 6.918608e+06
 # HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and currently in use, same as go_memstats_alloc_bytes. Equals to /memory/classes/heap/objects:bytes.
 # TYPE go_memstats_heap_alloc_bytes gauge
-go_memstats_heap_alloc_bytes 1.3427404e+08
+go_memstats_heap_alloc_bytes 2.18488648e+08
 # HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used. Equals to /memory/classes/heap/released:bytes + /memory/classes/heap/free:bytes.
 # TYPE go_memstats_heap_idle_bytes gauge
-go_memstats_heap_idle_bytes 1.32841472e+08
+go_memstats_heap_idle_bytes 2.04726272e+08
 # HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use. Equals to /memory/classes/heap/objects:bytes + /memory/classes/heap/unused:bytes
 # TYPE go_memstats_heap_inuse_bytes gauge
-go_memstats_heap_inuse_bytes 1.64921344e+08
+go_memstats_heap_inuse_bytes 2.4285184e+08
 # HELP go_memstats_heap_objects Number of currently allocated objects. Equals to /gc/heap/objects:objects.
 # TYPE go_memstats_heap_objects gauge
-go_memstats_heap_objects 566614
+go_memstats_heap_objects 1.096073e+06
 # HELP go_memstats_heap_released_bytes Number of heap bytes released to OS. Equals to /memory/classes/heap/released:bytes.
 # TYPE go_memstats_heap_released_bytes gauge
-go_memstats_heap_released_bytes 7.2032256e+07
+go_memstats_heap_released_bytes 1.2218368e+08
 # HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system. Equals to /memory/classes/heap/objects:bytes + /memory/classes/heap/unused:bytes + /memory/classes/heap/released:bytes + /memory/classes/heap/free:bytes.
 # TYPE go_memstats_heap_sys_bytes gauge
-go_memstats_heap_sys_bytes 2.97762816e+08
+go_memstats_heap_sys_bytes 4.47578112e+08
 # HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
 # TYPE go_memstats_last_gc_time_seconds gauge
-go_memstats_last_gc_time_seconds 1.7531285344333801e+09
+go_memstats_last_gc_time_seconds 1.75313082582959e+09
 # HELP go_memstats_mallocs_total Total number of heap objects allocated, both live and gc-ed. Semantically a counter version for go_memstats_heap_objects gauge. Equals to /gc/heap/allocs:objects + /gc/heap/tiny/allocs:objects.
 # TYPE go_memstats_mallocs_total counter
-go_memstats_mallocs_total 3.3135567e+07
+go_memstats_mallocs_total 1.372472525e+09
 # HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures. Equals to /memory/classes/metadata/mcache/inuse:bytes.
 # TYPE go_memstats_mcache_inuse_bytes gauge
 go_memstats_mcache_inuse_bytes 9664
@@ -1475,31 +1500,31 @@ go_memstats_mcache_inuse_bytes 9664
 go_memstats_mcache_sys_bytes 15704
 # HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures. Equals to /memory/classes/metadata/mspan/inuse:bytes.
 # TYPE go_memstats_mspan_inuse_bytes gauge
-go_memstats_mspan_inuse_bytes 1.49632e+06
+go_memstats_mspan_inuse_bytes 1.94704e+06
 # HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system. Equals to /memory/classes/metadata/mspan/inuse:bytes + /memory/classes/metadata/mspan/free:bytes.
 # TYPE go_memstats_mspan_sys_bytes gauge
-go_memstats_mspan_sys_bytes 2.51328e+06
+go_memstats_mspan_sys_bytes 3.39456e+06
 # HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place. Equals to /gc/heap/goal:bytes.
 # TYPE go_memstats_next_gc_bytes gauge
-go_memstats_next_gc_bytes 1.82266402e+08
+go_memstats_next_gc_bytes 2.79616178e+08
 # HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations. Equals to /memory/classes/other:bytes.
 # TYPE go_memstats_other_sys_bytes gauge
-go_memstats_other_sys_bytes 1.892227e+06
+go_memstats_other_sys_bytes 2.147667e+06
 # HELP go_memstats_stack_inuse_bytes Number of bytes obtained from system for stack allocator in non-CGO environments. Equals to /memory/classes/heap/stacks:bytes.
 # TYPE go_memstats_stack_inuse_bytes gauge
-go_memstats_stack_inuse_bytes 8.421376e+06
+go_memstats_stack_inuse_bytes 9.601024e+06
 # HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator. Equals to /memory/classes/heap/stacks:bytes + /memory/classes/os-stacks:bytes.
 # TYPE go_memstats_stack_sys_bytes gauge
-go_memstats_stack_sys_bytes 8.421376e+06
+go_memstats_stack_sys_bytes 9.601024e+06
 # HELP go_memstats_sys_bytes Number of bytes obtained from system. Equals to /memory/classes/total:byte.
 # TYPE go_memstats_sys_bytes gauge
-go_memstats_sys_bytes 3.18158152e+08
+go_memstats_sys_bytes 4.7185444e+08
 # HELP go_sched_gomaxprocs_threads The current runtime.GOMAXPROCS setting, or the number of operating system threads that can execute user-level Go code simultaneously. Sourced from /sched/gomaxprocs:threads.
 # TYPE go_sched_gomaxprocs_threads gauge
 go_sched_gomaxprocs_threads 8
 # HELP go_threads Number of OS threads created.
 # TYPE go_threads gauge
-go_threads 15
+go_threads 17
 # HELP libp2p_rcmgr_conn_memory How many conns have reserved this bucket of memory, as reported to the Resource Manager
 # TYPE libp2p_rcmgr_conn_memory histogram
 libp2p_rcmgr_conn_memory_bucket{le="1024"} 0
@@ -1519,15 +1544,15 @@ libp2p_rcmgr_conn_memory_count 0
 # TYPE libp2p_rcmgr_connections gauge
 libp2p_rcmgr_connections{dir="inbound",scope="system"} 0
 libp2p_rcmgr_connections{dir="inbound",scope="transient"} 0
-libp2p_rcmgr_connections{dir="outbound",scope="system"} 0
+libp2p_rcmgr_connections{dir="outbound",scope="system"} 1
 libp2p_rcmgr_connections{dir="outbound",scope="transient"} 0
 # HELP libp2p_rcmgr_fds Number of file descriptors reserved as reported to the Resource Manager
 # TYPE libp2p_rcmgr_fds gauge
-libp2p_rcmgr_fds{scope="system"} 0
+libp2p_rcmgr_fds{scope="system"} 1
 libp2p_rcmgr_fds{scope="transient"} 0
 # HELP libp2p_rcmgr_memory Amount of memory reserved as reported to the Resource Manager
 # TYPE libp2p_rcmgr_memory gauge
-libp2p_rcmgr_memory{protocol="",scope="system"} 0
+libp2p_rcmgr_memory{protocol="",scope="system"} 1.572864e+06
 libp2p_rcmgr_memory{protocol="/ipfs/id/1.0.0",scope="protocol"} 0
 libp2p_rcmgr_memory{protocol="/ipfs/id/push/1.0.0",scope="protocol"} 0
 libp2p_rcmgr_memory{protocol="/ipfs/ping/1.0.0",scope="protocol"} 0
@@ -1552,77 +1577,77 @@ libp2p_rcmgr_peer_connections_bucket{dir="inbound",le="256"} 0
 libp2p_rcmgr_peer_connections_bucket{dir="inbound",le="+Inf"} 0
 libp2p_rcmgr_peer_connections_sum{dir="inbound"} 0
 libp2p_rcmgr_peer_connections_count{dir="inbound"} 0
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="1"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="2"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="3"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="4"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="5"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="6"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="7"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="8"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="9"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="10"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="16"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="32"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="64"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="128"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="256"} 562
-libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="+Inf"} 562
-libp2p_rcmgr_peer_connections_sum{dir="outbound"} 562
-libp2p_rcmgr_peer_connections_count{dir="outbound"} 562
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="1"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="2"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="3"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="4"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="5"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="6"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="7"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="8"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="9"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="10"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="16"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="32"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="64"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="128"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="256"} 587
+libp2p_rcmgr_peer_connections_bucket{dir="outbound",le="+Inf"} 587
+libp2p_rcmgr_peer_connections_sum{dir="outbound"} 587
+libp2p_rcmgr_peer_connections_count{dir="outbound"} 587
 # HELP libp2p_rcmgr_peer_memory How many peers have reserved this bucket of memory, as reported to the Resource Manager
 # TYPE libp2p_rcmgr_peer_memory histogram
-libp2p_rcmgr_peer_memory_bucket{le="1024"} 69
-libp2p_rcmgr_peer_memory_bucket{le="4096"} 448
-libp2p_rcmgr_peer_memory_bucket{le="32768"} 1182
-libp2p_rcmgr_peer_memory_bucket{le="1.048576e+06"} 18290
-libp2p_rcmgr_peer_memory_bucket{le="3.3554432e+07"} 19694
-libp2p_rcmgr_peer_memory_bucket{le="2.68435456e+08"} 19694
-libp2p_rcmgr_peer_memory_bucket{le="5.36870912e+08"} 19694
-libp2p_rcmgr_peer_memory_bucket{le="1.073741824e+09"} 19694
-libp2p_rcmgr_peer_memory_bucket{le="2.147483648e+09"} 19694
-libp2p_rcmgr_peer_memory_bucket{le="4.294967296e+09"} 19694
-libp2p_rcmgr_peer_memory_bucket{le="+Inf"} 19694
-libp2p_rcmgr_peer_memory_sum 1.0689195776e+10
-libp2p_rcmgr_peer_memory_count 19694
+libp2p_rcmgr_peer_memory_bucket{le="1024"} 77
+libp2p_rcmgr_peer_memory_bucket{le="4096"} 460
+libp2p_rcmgr_peer_memory_bucket{le="32768"} 1179
+libp2p_rcmgr_peer_memory_bucket{le="1.048576e+06"} 202753
+libp2p_rcmgr_peer_memory_bucket{le="3.3554432e+07"} 212916
+libp2p_rcmgr_peer_memory_bucket{le="2.68435456e+08"} 212916
+libp2p_rcmgr_peer_memory_bucket{le="5.36870912e+08"} 212916
+libp2p_rcmgr_peer_memory_bucket{le="1.073741824e+09"} 212916
+libp2p_rcmgr_peer_memory_bucket{le="2.147483648e+09"} 212916
+libp2p_rcmgr_peer_memory_bucket{le="4.294967296e+09"} 212916
+libp2p_rcmgr_peer_memory_bucket{le="+Inf"} 212916
+libp2p_rcmgr_peer_memory_sum 1.27628103296e+11
+libp2p_rcmgr_peer_memory_count 212916
 # HELP libp2p_rcmgr_peer_streams Number of streams this peer has
 # TYPE libp2p_rcmgr_peer_streams histogram
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="1"} 1133
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="2"} 1159
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="3"} 1167
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="4"} 1172
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="5"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="6"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="7"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="8"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="9"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="10"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="16"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="32"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="64"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="128"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="256"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="+Inf"} 1174
-libp2p_rcmgr_peer_streams_sum{dir="inbound"} 1239
-libp2p_rcmgr_peer_streams_count{dir="inbound"} 1174
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="1"} 4272
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="2"} 8972
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="3"} 12547
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="4"} 13714
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="5"} 14101
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="6"} 14172
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="7"} 14197
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="8"} 14210
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="9"} 14218
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="10"} 14225
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="16"} 14234
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="32"} 14234
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="64"} 14234
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="128"} 14234
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="256"} 14234
-libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="+Inf"} 14234
-libp2p_rcmgr_peer_streams_sum{dir="outbound"} 31949
-libp2p_rcmgr_peer_streams_count{dir="outbound"} 14234
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="1"} 1765
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="2"} 1799
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="3"} 1810
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="4"} 1815
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="5"} 1818
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="6"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="7"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="8"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="9"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="10"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="16"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="32"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="64"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="128"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="256"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="inbound",le="+Inf"} 1819
+libp2p_rcmgr_peer_streams_sum{dir="inbound"} 1907
+libp2p_rcmgr_peer_streams_count{dir="inbound"} 1819
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="1"} 55860
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="2"} 132153
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="3"} 180577
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="4"} 197030
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="5"} 201381
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="6"} 203809
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="7"} 205037
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="8"} 205583
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="9"} 205824
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="10"} 205934
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="16"} 206063
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="32"} 206063
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="64"} 206063
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="128"} 206063
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="256"} 206063
+libp2p_rcmgr_peer_streams_bucket{dir="outbound",le="+Inf"} 206063
+libp2p_rcmgr_peer_streams_sum{dir="outbound"} 473640
+libp2p_rcmgr_peer_streams_count{dir="outbound"} 206063
 # HELP libp2p_rcmgr_previous_conn_memory How many conns have previously reserved this bucket of memory, as reported to the Resource Manager
 # TYPE libp2p_rcmgr_previous_conn_memory histogram
 libp2p_rcmgr_previous_conn_memory_bucket{le="1024"} 0
@@ -1658,86 +1683,86 @@ libp2p_rcmgr_previous_peer_connections_bucket{dir="inbound",le="256"} 0
 libp2p_rcmgr_previous_peer_connections_bucket{dir="inbound",le="+Inf"} 0
 libp2p_rcmgr_previous_peer_connections_sum{dir="inbound"} 0
 libp2p_rcmgr_previous_peer_connections_count{dir="inbound"} 0
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="1"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="2"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="3"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="4"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="5"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="6"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="7"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="8"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="9"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="10"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="16"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="32"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="64"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="128"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="256"} 413
-libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="+Inf"} 413
-libp2p_rcmgr_previous_peer_connections_sum{dir="outbound"} 413
-libp2p_rcmgr_previous_peer_connections_count{dir="outbound"} 413
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="1"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="2"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="3"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="4"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="5"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="6"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="7"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="8"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="9"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="10"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="16"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="32"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="64"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="128"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="256"} 438
+libp2p_rcmgr_previous_peer_connections_bucket{dir="outbound",le="+Inf"} 438
+libp2p_rcmgr_previous_peer_connections_sum{dir="outbound"} 438
+libp2p_rcmgr_previous_peer_connections_count{dir="outbound"} 438
 # HELP libp2p_rcmgr_previous_peer_memory How many peers have previously reserved this bucket of memory, as reported to the Resource Manager
 # TYPE libp2p_rcmgr_previous_peer_memory histogram
-libp2p_rcmgr_previous_peer_memory_bucket{le="1024"} 69
-libp2p_rcmgr_previous_peer_memory_bucket{le="4096"} 448
-libp2p_rcmgr_previous_peer_memory_bucket{le="32768"} 1182
-libp2p_rcmgr_previous_peer_memory_bucket{le="1.048576e+06"} 18290
-libp2p_rcmgr_previous_peer_memory_bucket{le="3.3554432e+07"} 19694
-libp2p_rcmgr_previous_peer_memory_bucket{le="2.68435456e+08"} 19694
-libp2p_rcmgr_previous_peer_memory_bucket{le="5.36870912e+08"} 19694
-libp2p_rcmgr_previous_peer_memory_bucket{le="1.073741824e+09"} 19694
-libp2p_rcmgr_previous_peer_memory_bucket{le="2.147483648e+09"} 19694
-libp2p_rcmgr_previous_peer_memory_bucket{le="4.294967296e+09"} 19694
-libp2p_rcmgr_previous_peer_memory_bucket{le="+Inf"} 19694
-libp2p_rcmgr_previous_peer_memory_sum 1.0689195776e+10
-libp2p_rcmgr_previous_peer_memory_count 19694
+libp2p_rcmgr_previous_peer_memory_bucket{le="1024"} 77
+libp2p_rcmgr_previous_peer_memory_bucket{le="4096"} 460
+libp2p_rcmgr_previous_peer_memory_bucket{le="32768"} 1179
+libp2p_rcmgr_previous_peer_memory_bucket{le="1.048576e+06"} 202749
+libp2p_rcmgr_previous_peer_memory_bucket{le="3.3554432e+07"} 212912
+libp2p_rcmgr_previous_peer_memory_bucket{le="2.68435456e+08"} 212912
+libp2p_rcmgr_previous_peer_memory_bucket{le="5.36870912e+08"} 212912
+libp2p_rcmgr_previous_peer_memory_bucket{le="1.073741824e+09"} 212912
+libp2p_rcmgr_previous_peer_memory_bucket{le="2.147483648e+09"} 212912
+libp2p_rcmgr_previous_peer_memory_bucket{le="4.294967296e+09"} 212912
+libp2p_rcmgr_previous_peer_memory_bucket{le="+Inf"} 212912
+libp2p_rcmgr_previous_peer_memory_sum 1.27626530432e+11
+libp2p_rcmgr_previous_peer_memory_count 212912
 # HELP libp2p_rcmgr_previous_peer_streams Number of streams this peer has
 # TYPE libp2p_rcmgr_previous_peer_streams histogram
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="1"} 1133
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="2"} 1159
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="3"} 1167
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="4"} 1172
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="5"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="6"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="7"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="8"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="9"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="10"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="16"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="32"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="64"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="128"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="256"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="+Inf"} 1174
-libp2p_rcmgr_previous_peer_streams_sum{dir="inbound"} 1239
-libp2p_rcmgr_previous_peer_streams_count{dir="inbound"} 1174
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="1"} 4272
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="2"} 8972
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="3"} 12547
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="4"} 13714
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="5"} 14101
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="6"} 14172
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="7"} 14197
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="8"} 14210
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="9"} 14218
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="10"} 14225
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="16"} 14234
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="32"} 14234
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="64"} 14234
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="128"} 14234
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="256"} 14234
-libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="+Inf"} 14234
-libp2p_rcmgr_previous_peer_streams_sum{dir="outbound"} 31949
-libp2p_rcmgr_previous_peer_streams_count{dir="outbound"} 14234
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="1"} 1762
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="2"} 1796
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="3"} 1807
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="4"} 1812
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="5"} 1815
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="6"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="7"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="8"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="9"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="10"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="16"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="32"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="64"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="128"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="256"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="inbound",le="+Inf"} 1816
+libp2p_rcmgr_previous_peer_streams_sum{dir="inbound"} 1904
+libp2p_rcmgr_previous_peer_streams_count{dir="inbound"} 1816
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="1"} 55860
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="2"} 132153
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="3"} 180576
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="4"} 197029
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="5"} 201380
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="6"} 203808
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="7"} 205036
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="8"} 205582
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="9"} 205823
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="10"} 205933
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="16"} 206062
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="32"} 206062
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="64"} 206062
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="128"} 206062
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="256"} 206062
+libp2p_rcmgr_previous_peer_streams_bucket{dir="outbound",le="+Inf"} 206062
+libp2p_rcmgr_previous_peer_streams_sum{dir="outbound"} 473637
+libp2p_rcmgr_previous_peer_streams_count{dir="outbound"} 206062
 # HELP libp2p_rcmgr_streams Number of Streams
 # TYPE libp2p_rcmgr_streams gauge
-libp2p_rcmgr_streams{dir="inbound",protocol="",scope="system"} 0
+libp2p_rcmgr_streams{dir="inbound",protocol="",scope="system"} 3
 libp2p_rcmgr_streams{dir="inbound",protocol="",scope="transient"} 0
 libp2p_rcmgr_streams{dir="inbound",protocol="/ipfs/id/1.0.0",scope="protocol"} 0
 libp2p_rcmgr_streams{dir="inbound",protocol="/ipfs/id/push/1.0.0",scope="protocol"} 0
-libp2p_rcmgr_streams{dir="inbound",protocol="/swarm/hive/1.1.0/peers",scope="protocol"} 0
+libp2p_rcmgr_streams{dir="inbound",protocol="/swarm/hive/1.1.0/peers",scope="protocol"} 3
 libp2p_rcmgr_streams{dir="inbound",protocol="/swarm/pricing/1.0.0/pricing",scope="protocol"} 0
-libp2p_rcmgr_streams{dir="outbound",protocol="",scope="system"} 0
+libp2p_rcmgr_streams{dir="outbound",protocol="",scope="system"} 3
 libp2p_rcmgr_streams{dir="outbound",protocol="",scope="transient"} 0
 libp2p_rcmgr_streams{dir="outbound",protocol="/ipfs/id/1.0.0",scope="protocol"} 0
 libp2p_rcmgr_streams{dir="outbound",protocol="/ipfs/id/push/1.0.0",scope="protocol"} 0
@@ -1747,7 +1772,7 @@ libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/handshake/13.0.0/handshake"
 libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/hive/1.1.0/peers",scope="protocol"} 0
 libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/pricing/1.0.0/pricing",scope="protocol"} 0
 libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/pseudosettle/1.0.0/pseudosettle",scope="protocol"} 0
-libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/pushsync/1.3.1/pushsync",scope="protocol"} 0
+libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/pushsync/1.3.1/pushsync",scope="protocol"} 3
 libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/status/1.1.3/status",scope="protocol"} 0
 libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/swap/1.0.0/swap",scope="protocol"} 0
 # HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
@@ -1755,6 +1780,6 @@ libp2p_rcmgr_streams{dir="outbound",protocol="/swarm/swap/1.0.0/swap",scope="pro
 promhttp_metric_handler_requests_in_flight 1
 # HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
 # TYPE promhttp_metric_handler_requests_total counter
-promhttp_metric_handler_requests_total{code="200"} 2
+promhttp_metric_handler_requests_total{code="200"} 76
 promhttp_metric_handler_requests_total{code="500"} 0
 promhttp_metric_handler_requests_total{code="503"} 0

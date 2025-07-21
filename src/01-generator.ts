@@ -19,7 +19,7 @@ function main() {
         chunk.writer.write(new Uint8ArrayReader(bytes))
         chunk.span = 32n
         const reference = chunk.hash()
-        const binary = Binary.uint8ArrayToBinary(reference).slice(0, 11)
+        const binary = Binary.uint8ArrayToBinary(reference).slice(0, depth)
         map.set(binary, { reference: Binary.uint8ArrayToHex(reference), bytes: Binary.uint8ArrayToHex(bytes) })
         iterations++
         if (iterations % 100 === 0) {
