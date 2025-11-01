@@ -16,11 +16,15 @@ async function main() {
     let i = 0
     for (const item of json) {
         console.log(++i, '/', 2 ** depth)
-        const result = await bee.downloadData(item.reference)
-        if (!result.equals(item.bytes)) {
-            console.error(
-                `Mismatch for neighborhood ${item.neighborhood}: expected ${item.bytes}, got ${result.toHex()}`
-            )
+        try {
+            const result = await bee.downloadData(item.reference)
+            if (!result.equals(item.bytes)) {
+                console.error(
+                    `Mismatch for neighborhood ${item.neighborhood}: expected ${item.bytes}, got ${result.toHex()}`
+                )
+            }
+        } catch (error) {
+            console.error(`Error downloading neighborhood ${item.neighborhood}:`, error)
         }
     }
 }
